@@ -1,12 +1,13 @@
     /* Define font styles */
     body {
-        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-family: Montserrat, sans-serif;
       }
       h1, h2, h3, h4, h5, h6 {
-        font-family: Georgia, serif;
+        font-family: Montserrat, sans-serif;
       }
-      .code {
-        font-family: "Courier New", monospace;
+      .fontSecondary {
+        font-family: "Georgia", monospace;
       }
   
       /* Define font sizes */
@@ -42,12 +43,40 @@
       .bg-tertiary {
         background-color: #0000ff;
       }
+      .bg-soft-gray {
+        background-color: #232222;
+      }
+      .bg-soft-white{
+        background-color: white;
+      }
   
       /* Define button styles */
-      .btn {
-        background-color: #ff0000;
-        color: #ffffff;
-        padding: 10px 20px;
-        border-radius: 5px;
+      a {
+        color: white;
         text-decoration: none;
+        border-radius: 0;
+        }
+        .smallbtn {
+        background-color: #232222;
+        padding: 10px 20px;
+        }
+        .bigbtn {
+        background-color: #232222;
+        padding: 15px 25px;
+        font-size: 24px;
+        }
+
+      /* Style for the text in the middle of the page */
+      .center-text {
+        text-align: center;
+        color: white;
+        padding: 100px;
+        margin: 0px;
+      }
+      .outlined-text{
+        text-align:left;
+        color: #1a1b1f;
+        padding: 100px;
+        margin: 0px;
+        margin-left: 100px;
       }
