@@ -1,0 +1,53 @@
+    /* Define font styles */
+    body {
+        font-family: Arial, sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, serif;
+      }
+      .code {
+        font-family: "Courier New", monospace;
+      }
+  
+      /* Define font sizes */
+      h1 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+  
+      /* Define colors */
+      .primary {
+        color: #ff0000;
+      }
+      .secondary {
+        color: #00ff00;
+      }
+      .tertiary {
+        color: #0000ff;
+      }
+      .bg-primary {
+        background-color: #ff0000;
+      }
+      .bg-secondary {
+        background-color: #00ff00;
+      }
+      .bg-tertiary {
+        background-color: #0000ff;
+      }
+  
+      /* Define button styles */
+      .btn {
+        background-color: #ff0000;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
