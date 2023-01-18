@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.23 27.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: FranklinGothic-Heavy, 'Franklin Gothic Heavy';
+        font-size: 15px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect x="1.2" y="4.36" width="52.05" height="18.47" transform="translate(-1.94 4.91) rotate(-9.95)"/>
+      <text class="cls-1" transform="translate(5.76 20.34) rotate(-6.58)"><tspan x="0" y="0">HOME </tspan></text>
+    </g>
+  </g>
+</svg>
