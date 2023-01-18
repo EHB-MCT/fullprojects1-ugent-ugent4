@@ -1,0 +1,82 @@
+    /* Define font styles */
+    body {
+        margin: 0px;
+        font-family: Montserrat, sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Montserrat, sans-serif;
+      }
+      .fontSecondary {
+        font-family: "Georgia", monospace;
+      }
+  
+      /* Define font sizes */
+      h1 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+  
+      /* Define colors */
+      .primary {
+        color: #ff0000;
+      }
+      .secondary {
+        color: #00ff00;
+      }
+      .tertiary {
+        color: #0000ff;
+      }
+      .bg-primary {
+        background-color: #b5caca;
+      }
+      .bg-secondary {
+        background-color: #647a76;
+      }
+      .bg-tertiary {
+        background-color: #2f393a;
+      }
+      .bg-soft-gray {
+        background-color: #232222;
+      }
+      .bg-soft-white{
+        background-color: white;
+      }
+  
+      /* Define button styles */
+      a {
+        color: white;
+        text-decoration: none;
+        border-radius: 0;
+        }
+        .smallbtn {
+        background-color: #232222;
+        padding: 10px 20px;
+        }
+        .bigbtn {
+        background-color: #232222;
+        padding: 15px 25px;
+        font-size: 24px;
+        }
+
+      /* Style for the text in the middle of the page */
+      .center-text {
+        text-align: center;
+        color: white;
+        padding: 100px;
+        margin: 0px;
+      }
+      .outlined-text{
+        text-align:left;
+        color: #1a1b1f;
+        padding: 100px;
+        margin: 0px;
+        margin-left: 100px;
+      }
