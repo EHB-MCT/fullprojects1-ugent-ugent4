@@ -1,10 +1,22 @@
     /* Define font styles */
     body {
         margin: 0px;
-        font-family: Montserrat, sans-serif;
+        color: black;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
       }
       h1, h2, h3, h4, h5, h6 {
-        font-family: Montserrat, sans-serif;
+        color: black;
+        font-family: franklin-gothic-atf, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      p{
+        color: black;
+        font-family: acumin-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
       }
       .fontSecondary {
         font-family: "Georgia", monospace;
@@ -12,16 +24,16 @@
   
       /* Define font sizes */
       h1 {
-        font-size: 36px;
+        font-size: 47pt;
       }
       h2 {
-        font-size: 30px;
+        font-size: 33pt;
       }
       h3 {
-        font-size: 24px;
+        font-size: 28pt;
       }
       p {
-        font-size: 18px;
+        font-size: 12pt;
       }
   
       /* Define colors */
@@ -47,7 +59,17 @@
         background-color: #232222;
       }
       .bg-soft-white{
-        background-color: white;
+        /* background-color: white; */
+        background-image: url('/Rescources/Statue_01.png'), url("/Rescources/ShapesColoured.png"), url(/Rescources/Shapes.png);
+        background-attachment:scroll,fixed, scroll;
+        background-position: center center, center center, right right;
+        background-size: cover;
+        background-blend-mode: overlay, normal, overlay;
+      }
+      .bg-paper{
+        background-image: url('/Rescources/paperTexture.jpg');
+        background-position: center center;
+        background-size: cover;
       }
   
       /* Define button styles */
