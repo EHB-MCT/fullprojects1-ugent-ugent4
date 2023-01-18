@@ -70,6 +70,7 @@
         background-image: url('/Rescources/ShapesCorners.png'), url('/Rescources/paperTexture.jpg');
         background-position: center center, center center;
         background-size: cover;
+        z-index: 0;
       }
   
       /* Define button styles */
@@ -143,10 +144,15 @@
         font-weight: bold;
         color: black;
       }
+      a:hover{
+        color: #296b68;
+        transition-duration: 0.2s;
+      }
       #navbar {
         display: flex;
         width: 100%;
-        position: fixed;
+        position: sticky;
+        top: -100px;
         top: 0;
         left: 0;
         z-index: 1;
