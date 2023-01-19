@@ -1,82 +1,121 @@
     /* Define font styles */
     body {
-        margin: 0px;
-        font-family: Montserrat, sans-serif;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        font-family: Montserrat, sans-serif;
-      }
-      .fontSecondary {
-        font-family: "Georgia", monospace;
-      }
-  
-      /* Define font sizes */
-      h1 {
-        font-size: 36px;
-      }
-      h2 {
-        font-size: 30px;
-      }
-      h3 {
-        font-size: 24px;
-      }
-      p {
-        font-size: 18px;
-      }
-  
-      /* Define colors */
-      .primary {
-        color: #ff0000;
-      }
-      .secondary {
-        color: #00ff00;
-      }
-      .tertiary {
-        color: #0000ff;
-      }
-      .bg-primary {
-        background-color: #b5caca;
-      }
-      .bg-secondary {
-        background-color: #647a76;
-      }
-      .bg-tertiary {
-        background-color: #2f393a;
-      }
-      .bg-soft-gray {
-        background-color: #232222;
-      }
-      .bg-soft-white{
-        background-color: white;
-      }
-  
-      /* Define button styles */
-      a {
-        color: white;
-        text-decoration: none;
-        border-radius: 0;
-        }
-        .smallbtn {
-        background-color: #232222;
-        padding: 10px 20px;
-        }
-        .bigbtn {
-        background-color: #232222;
-        padding: 15px 25px;
-        font-size: 24px;
-        }
+      margin: 0px;
+      color: #21221D;
+      font-family: ff-tisa-sans-web-pro, sans-serif;
+    }
 
-      /* Style for the text in the middle of the page */
-      .center-text {
-        text-align: center;
-        color: white;
-        padding: 100px;
-        margin: 0px;
-      }
-      .outlined-text{
-        text-align:left;
-        color: #1a1b1f;
-        padding: 100px;
-        margin: 0px;
-        margin-left: 100px;
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #21221D;
+      font-family: malaga, serif;
+    }
+
+    p {
+      color: #21221D;
+      font-family: ff-tisa-sans-web-pro, sans-serif;
+    }
+
+    /* Define font sizes */
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    /* Define colors */
+    .primary {
+      color: #21221D;
+    }
+
+    .secondary {
+      color: #92140C;
+    }
+
+    .tertiary {
+      color: #3A5743;
+    }
+
+    .bg-primary {
+      background-color: #F1A42B;
+    }
+
+    .bg-secondary {
+      background-color: #3A5743;
+    }
+
+    .bg-tertiary {
+      background-color: #92140C;
+    }
+
+    .bg-blue {
+      background-color: #1E64C8;
+    }
+
+    .bg-soft-white {
+      background-color: #FFFEE9;
+    }
+
+    /* Define button styles */
+    a {
+      color: white;
+      text-decoration: none;
+      border-radius: 0;
+    }
+
+    .smallbtn,
+    .bigbtn {
+      background-color: #92140C;
+      color: #FFFEE9;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      transition: all 0.3s ease;
+      border: 2px solid #92140C;
+    }
+
+    .bigbtn {
+      padding: 15px 25px;
+      font-size: 24px;
+    }
+
+    .smallbtn:hover,
+    .bigbtn:hover {
+      background-color: #FFFEE9;
+      color: #92140C;
+      border: 2px solid #92140C;
+    }
+
+    /* Style for the text in the middle of the page */
+    .center-text {
+      text-align: center;
+      padding: 100px;
+      margin: 0px;
+    }
+
+    .center-text h1,
+    .center-text p {
+      color: #FFFEE9;
+    }
+
+    .outlined-text {
+      text-align: left;
+      color: #1a1b1f;
+      padding: 100px;
+      margin: 0px;
+      margin-left: 100px;
+    }
