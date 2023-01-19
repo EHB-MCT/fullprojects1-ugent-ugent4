@@ -68,6 +68,8 @@
 
     .bg-soft-white {
       background-color: #FFFEF8;
+      background-image: url(./Rescources/Height-lines2\ color.svg);
+      background-size: cover;
     }
 
     /* Define button styles */
@@ -105,6 +107,7 @@
       text-align: center;
       padding: 100px;
       margin: 0px;
+      background-image: url(./Rescources/Height-lines2\ color.svg);
     }
 
     .center-text h1,
