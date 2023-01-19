@@ -67,7 +67,7 @@
     }
 
     .bg-soft-white {
-      background-color: #FFFEE9;
+      background-color: #FFFEF8;
     }
 
     /* Define button styles */
@@ -80,7 +80,7 @@
     .smallbtn,
     .bigbtn {
       background-color: #92140C;
-      color: #FFFEE9;
+      color: #FFFEF8;
       padding: 10px 20px;
       border-radius: 10px;
       border: none;
@@ -95,7 +95,7 @@
 
     .smallbtn:hover,
     .bigbtn:hover {
-      background-color: #FFFEE9;
+      background-color: #FFFEF8;
       color: #92140C;
       border: 2px solid #92140C;
     }
@@ -109,7 +109,7 @@
 
     .center-text h1,
     .center-text p {
-      color: #FFFEE9;
+      color: #FFFEF8;
     }
 
     .outlined-text {
