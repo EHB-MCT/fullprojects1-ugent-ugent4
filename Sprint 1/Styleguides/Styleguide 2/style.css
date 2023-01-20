@@ -1,166 +1,193 @@
     /* Define font styles */
     body {
-        margin: 0px;
-        color: black;
-        font-family: acumin-pro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        color: black;
-        font-family: franklin-gothic-atf, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-      }
-      p{
-        color: black;
-        font-family: acumin-pro, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .fontSecondary {
-        font-family: "Georgia", monospace;
-      }
-  
-      /* Define font sizes */
-      h1 {
-        font-size: 47pt;
-      }
-      h2 {
-        font-size: 33pt;
-      }
-      h3 {
-        font-size: 28pt;
-      }
-      p {
-        font-size: 12pt;
-      }
-  
-      /* Define colors */
-      .primary {
-        color: #1E64C8;
-      }
-      .secondary {
-        color: #FFD200;
-      }
-      .tertiary {
-        color: #DB7CAA;
-      }
-      .bg-primary {
-        background-color: #1E64C8;
-      }
-      .bg-secondary {
-        background-color: #FFD200;
-      }
-      .bg-tertiary {
-        background-color: #DB7CAA;
-      }
-      .bg-soft-gray {
-        background-color: #232222;
-      }
-      .bg-soft-white{
-        /* background-color: white; */
-        background-image: url('/Rescources/Statue_01.png'), url("/Rescources/ShapesColoured.png"), url(/Rescources/Shapes.png);
-        background-attachment:scroll,fixed, scroll;
-        background-position: center center, center center, right right;
-        background-size: cover;
-        background-blend-mode: overlay, normal, overlay;
-      }
-      .bg-paper{
-        background-image: url('/Rescources/ShapesCorners.png'), url('/Rescources/paperTexture.jpg');
-        background-position: center center, center center;
-        background-size: cover;
-        z-index: 0;
-      }
-  
-      /* Define button styles */
-      a {
-        color: white;
-        text-decoration: none;
-        border-radius: 0;
-        }
-        .smallbtn {
-        background-color: #232222;
-        padding: 10px 20px;
-        }
-        .bigbtn {
-        background-color: #232222;
-        padding: 15px 25px;
-        font-size: 24px;
-        }
+      margin: 0px;
+      color: black;
+      font-family: acumin-pro, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-      /* Style for the text in the middle of the page */
-      .center-text {
-        text-align: center;
-        color: white;
-        padding: 100px;
-        margin: 0px;
-      }
-      .outlined-text{
-        text-align:left;
-        color: #1a1b1f;
-        padding: 100px;
-        margin: 0px;
-        margin-left: 100px;
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: black;
+      font-family: franklin-gothic-atf, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
 
-<<<<<<< Updated upstream
-      .outlined-text p{
-        font-family: ;
-      }
-      .square-button, .big-square-button {
-        width: 100px; /* adjust as needed */
-        height: 50px; /* adjust as needed */
-        background-color: black;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transform: rotate(-15deg); /* rotates the button 45 degrees */
-      }
-      
-      .square-button span, .big-square-button span {
-        display: inline-block;
-        font-weight: bold;
-        transform: rotate(5deg); /* rotates the text -45 degrees */
-      }
-      
-      .square-button:hover, .big-square-button:hover {
-        background-color: white;
-        border-color: black;
-        color: black;
-      }
-      
-      .big-square-button {
-        width: 120px; /* adjust as needed */
-        height: 70px; /* adjust as needed */
-        font-size: 27pt;
-      }
-      
-      .square-button {
-        font-size: 22pt;
-      }
-      a{
-        font-size: 33pt;
-        font-weight: bold;
-        color: black;
-      }
-      a:hover{
-        color: #296b68;
-        transition-duration: 0.2s;
-      }
-      #navbar {
-        display: flex;
-        width: 100%;
-        position: sticky;
-        top: -100px;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        justify-content: space-around;
-        padding: 10px;
-        margin-top: 5px;
-      }
-=======
-      .o
->>>>>>> Stashed changes
+    p {
+      color: black;
+      font-family: acumin-pro, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Define font sizes */
+    h1 {
+      font-size: 47pt;
+    }
+
+    h2 {
+      font-size: 33pt;
+    }
+
+    h3 {
+      font-size: 28pt;
+    }
+
+    p {
+      font-size: 12pt;
+    }
+
+    /* Define colors */
+    .primary {
+      color: #1E64C8;
+    }
+
+    .secondary {
+      color: #FFD200;
+    }
+
+    .tertiary {
+      color: #DB7CAA;
+    }
+
+    .bg-primary {
+      background-color: #1E64C8;
+    }
+
+    .bg-secondary {
+      background-color: #FFD200;
+    }
+
+    .bg-tertiary {
+      background-color: #DB7CAA;
+    }
+
+    .bg-soft-gray {
+      background-color: #232222;
+    }
+
+    .bg-soft-white {
+      /* background-color: white; */
+      background-image: url('/Rescources/Statue_01.png'), url("/Rescources/ShapesColoured.png"), url(/Rescources/Shapes.png);
+      background-attachment: scroll, fixed, scroll;
+      background-position: center center, center center, right right;
+      background-size: cover;
+      background-blend-mode: overlay, normal, overlay;
+    }
+
+    .bg-paper {
+      background-image: url('/Rescources/ShapesCorners.png'), url('/Rescources/paperTexture.jpg');
+      background-position: center center, center center;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    /* Define button styles */
+    a {
+      color: white;
+      text-decoration: none;
+      border-radius: 0;
+    }
+
+    .smallbtn {
+      background-color: #232222;
+      padding: 10px 20px;
+    }
+
+    .bigbtn {
+      background-color: #232222;
+      padding: 15px 25px;
+      font-size: 24px;
+    }
+
+    /* Style for the text in the middle of the page */
+    .center-text {
+      text-align: center;
+      color: white;
+      padding: 100px;
+      margin: 0px;
+    }
+
+    .outlined-text {
+      text-align: left;
+      color: #1a1b1f;
+      padding: 100px;
+      margin: 0px;
+      margin-left: 100px;
+    }
+
+    .outlined-text p {
+      font-weight: 700;
+    }
+
+    .square-button,
+    .big-square-button {
+      width: 100px;
+      /* adjust as needed */
+      height: 50px;
+      /* adjust as needed */
+      background-color: black;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transform: rotate(-15deg);
+      /* rotates the button 45 degrees */
+    }
+
+    .square-button span,
+    .big-square-button span {
+      display: inline-block;
+      font-weight: bold;
+      transform: rotate(5deg);
+      /* rotates the text -45 degrees */
+    }
+
+    .square-button:hover,
+    .big-square-button:hover {
+      background-color: white;
+      border-color: black;
+      color: black;
+    }
+
+    .big-square-button {
+      width: 120px;
+      /* adjust as needed */
+      height: 70px;
+      /* adjust as needed */
+      font-size: 27pt;
+    }
+
+    .square-button {
+      font-size: 22pt;
+    }
+
+    a {
+      font-size: 33pt;
+      font-weight: bold;
+      color: black;
+    }
+
+    a:hover {
+      color: #296b68;
+      transition-duration: 0.2s;
+    }
+
+    #navbar {
+      display: flex;
+      width: 100%;
+      position: relative;
+      top: -100px;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      justify-content: space-around;
+      padding: 10px;
+      margin-top: 5px;
+    }
