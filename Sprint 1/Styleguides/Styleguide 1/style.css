@@ -11,7 +11,7 @@ h4,
 h5,
 h6,
 p {
-	color: #ee2735;
+	color: #da5b37;
 	font-family: Arial, sans-serif;
 }
 
@@ -57,7 +57,7 @@ p {
 }
 
 .tertiary {
-	color: #ee2735;
+	color: #da5b37;
 }
 
 .bg-primary {
@@ -69,7 +69,7 @@ p {
 }
 
 .bg-tertiary {
-	background-color: #ee2735;
+	background-color: #da5b37;
 }
 
 .bg-soft-colour {
@@ -86,13 +86,13 @@ p {
 /* Define button styles */
 a {
 	color: #1a1b1f;
-	background-color: #ee2735;
+	background-color: #da5b37;
 	text-decoration: none;
 	border-radius: 0;
 }
 
 .smallbtn {
-	background-color: #ee2735;
+	background-color: #da5b37;
 	color: #1a1b1f;
 	transition: all 0.3s ease;
 	padding: 10px 20px;
