@@ -1,111 +1,124 @@
-    /* Define font styles */
-    body {
-      margin: 0px;
-      font-family: Arial, sans-serif;
-    }
+/* Define font styles */
+body {
+	margin: 0px;
+	font-family: Arial, sans-serif;
+}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      color: #007DC5;
-      font-family: Arial, sans-serif;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: #ee2735;
+	font-family: Arial, sans-serif;
+}
 
-    .fontSecondary {
-      font-family: Arial, sans-serif;
-      font-style: italic;
-    }
+.fontSecondary {
+	font-family: Arial, sans-serif;
+	font-style: italic;
+}
 
-    /* Define font sizes */
-    h1 {
-      font-size: 36px;
-    }
+.center-text p {
+	color: #ffdd00;
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+}
 
-    h2 {
-      font-size: 30px;
-    }
+p {
+	color: #1a1b1f;
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+}
 
-    h3 {
-      font-size: 24px;
-    }
+/* Define font sizes */
+h1 {
+	font-size: 36px;
+}
 
-    p {
-      font-size: 18px;
-    }
+h2 {
+	font-size: 30px;
+}
 
-    /* Define colors */
-    .primary {
-      color: #007DC5;
-    }
+h3 {
+	font-size: 24px;
+}
 
-    .secondary {
-      color: #FFDD00;
-    }
+p {
+	font-size: 18px;
+}
 
-    .tertiary {
-      color: #EE2735;
-    }
+/* Define colors */
+.primary {
+	color: #007dc5;
+}
 
-    .bg-primary {
-      background-color: #007DC5;
-    }
+.secondary {
+	color: #ffdd00;
+}
 
-    .bg-secondary {
-      background-color: #FFDD00;
-    }
+.tertiary {
+	color: #ee2735;
+}
 
-    .bg-tertiary {
-      background-color: #EE2735;
-    }
+.bg-primary {
+	background-color: #007dc0;
+}
 
-    .bg-soft-colour {
-      background-color: #201f1e;
-      background-image: url(./Rescources/Head.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+.bg-secondary {
+	background-color: #ffdd00;
+}
 
-    .bg-soft-white {
-      background-color: white;
-    }
+.bg-tertiary {
+	background-color: #ee2735;
+}
 
-    /* Define button styles */
-    a {
-      color: white;
-      background-color: #007DC5;
-      text-decoration: none;
-      border-radius: 0;
-    }
+.bg-soft-colour {
+	background-color: #201f1e;
+	background-image: url(./Rescources/heads.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
-    .smallbtn {
-      padding: 10px 20px;
-    }
+.bg-soft-white {
+	background-color: white;
+}
 
-    .bigbtn {
-      padding: 15px 25px;
-      font-size: 24px;
-    }
+/* Define button styles */
+a {
+	color: #1a1b1f;
+	background-color: #ee2735;
+	text-decoration: none;
+	border-radius: 0;
+}
 
-    a:hover {
-      background-color: gray;
-    }
+.smallbtn {
+	background-color: #ee2735;
+	color: #1a1b1f;
+	transition: all 0.3s ease;
+	padding: 10px 20px;
+}
 
-    /* Style for the text in the middle of the page */
-    .center-text {
-      text-align: center;
-      color: white;
-      padding: 100px;
-      margin: 0px;
-    }
+.bigbtn {
+	padding: 15px 25px;
+	font-size: 24px;
+}
 
-    .outlined-text {
-      text-align: left;
-      color: #1a1b1f;
-      padding: 100px;
-      margin: 0px;
-      margin-left: 100px;
-    }
+a:hover {
+	background-color: #007dc0;
+}
+
+/* Style for the text in the middle of the page */
+.center-text {
+	text-align: center;
+	color: white;
+	padding: 100px;
+	margin: 0px;
+}
+
+.outlined-text {
+	text-align: left;
+	color: #1a1b1f;
+	padding: 100px;
+	margin: 0px;
+	margin-left: 100px;
+}
