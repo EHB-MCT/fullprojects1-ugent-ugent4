@@ -63,7 +63,7 @@
     }
 
     .bg-blue {
-      background-color: #1E64C8;
+      background-color: #3A5743;
     }
 
     .bg-soft-white {
@@ -100,7 +100,7 @@
       background-color: #F1A42B;
       color: white;
       border: 2px solid #F1A42B;
-      background-image: url(./Rescources/Height-lines2-color.svg);
+      background-image: url(./Rescources/Height-lines2-black.svg);
       background-size: 400%;
     }
 
@@ -109,7 +109,8 @@
       text-align: center;
       padding: 100px;
       margin: 0px;
-      background-image: url(./Rescources/Height-lines2-color.svg);
+      background-image: url(./Rescources/Height-lines2-white.svg);
+      background-size: 100%;
     }
 
     .center-text h1,
