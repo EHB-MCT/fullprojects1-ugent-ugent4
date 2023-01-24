@@ -1,20 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
 header {
     display: flex;
     align-items: center;
     /* center the logo and nav vertically */
     justify-content: space-between;
     /* align the logo to the left and nav to the right */
-    background-color: #fff;
     padding: 10px;
+    width: calc(100% - 20px);
+    top: -20px;
 }
 
 .logo {
-    flex: 0 0 auto;
-    /* fix the size of the logo */
+    margin-left: 70px;
 }
 
 .logo img {
-    width: 200px;
+    width: 160px;
 }
 
 .square-button,
@@ -42,6 +50,7 @@ header {
     color: white;
     transform: rotate(5deg);
     transform: rotate(-15deg);
+    transition-duration: 300ms;
 }
 
 .big-square-button {
@@ -53,7 +62,7 @@ header {
 }
 
 .square-button {
-    font-size: 20pt;
+    font-size: 16pt;
 }
 
 nav {
@@ -65,17 +74,28 @@ nav {
     /* allow the nav to fill the remaining space */
     display: flex;
     width: 100%;
-    position: relative;
-    top: -100px;
-    top: 0;
-    left: 0;
     z-index: 1;
-    padding: 10px;
-    margin-top: 5px;
 }
 
 nav button {
     margin-right: 20px;
     padding: 5px 10px;
     /* add some space between the words */
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.scroll-to-top img {
+    width: 70px;
+}
+
+main {
+    margin: 100px;
 }
