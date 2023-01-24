@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -9,17 +13,12 @@ header {
     justify-content: space-between;
     /* align the logo to the left and nav to the right */
     padding: 10px;
-    width: 100%;
+    width: calc(100% - 20px);
     top: -20px;
 }
 
 .logo {
-    flex: 0 0 auto;
-    /* fix the size of the logo */
-}
-
-.logo a {
-    pointer-events: auto;
+    margin-left: 70px;
 }
 
 .logo img {
@@ -51,6 +50,7 @@ header {
     color: white;
     transform: rotate(5deg);
     transform: rotate(-15deg);
+    transition-duration: 300ms;
 }
 
 .big-square-button {
@@ -94,4 +94,8 @@ nav button {
 
 .scroll-to-top img {
     width: 70px;
+}
+
+main {
+    margin: 100px;
 }
