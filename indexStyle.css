@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    align-items: center;
+    /* center the logo and nav vertically */
+    justify-content: space-between;
+    /* align the logo to the left and nav to the right */
+    background-color: #fff;
+    padding: 10px;
+}
+
+.logo {
+    flex: 0 0 auto;
+    /* fix the size of the logo */
+}
+
+.logo img {
+    width: 200px;
+}
+
+.square-button,
+.big-square-button {
+    min-width: 100px;
+    min-height: 50px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.square-button span,
+.big-square-button span {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.square-button:hover,
+.big-square-button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    transform: rotate(5deg);
+    transform: rotate(-15deg);
+}
+
+.big-square-button {
+    min-width: 120px;
+    /* adjust as needed */
+    min-height: 70px;
+    /* adjust as needed */
+    font-size: 27pt;
+}
+
+.square-button {
+    font-size: 20pt;
+}
+
+nav {
+    align-items: center;
+    /* center the links vertically */
+    justify-content: flex-end;
+    /* align the links to the right */
+    flex: 1 1 auto;
+    /* allow the nav to fill the remaining space */
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -100px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+nav button {
+    margin-right: 20px;
+    padding: 5px 10px;
+    /* add some space between the words */
+}
