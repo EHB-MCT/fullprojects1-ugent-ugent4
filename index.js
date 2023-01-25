@@ -1,8 +1,8 @@
-function openMenu() {
+window.onload = function(){
+    document.getElementById("menu").style.display = "block";
+};
+
+function toggleMenu() {
     var menu = document.getElementById("menu");
-    if (menu.style.display === "none") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
-  }
+    menu.classList.toggle("menu-visible");
+}
