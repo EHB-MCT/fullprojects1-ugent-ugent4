@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="indexStyle.css">
     <title>UGent Logo Wedstrijd</title>
+    <script src="index.js"></script>
 </head>
 <body>
     <header id="header">
         <div class="logo">
             <a href="index.html">
-                <img src="rescources/logo_kleur.png" alt="Logo">
+                <img src="rescources/index_mobile/logo ug.svg" alt="Logo">
             </a>
         </div>
-        <nav>
+        <div class="menu-container">
+            <img src="rescources/index_mobile/maak een logo.svg" class="menu-icon" onclick="openMenu()">
+            <div id="menu" class="menu">
+              <a href="#history">Geschiedenis</a>
+              <a href="#about">About</a>
+              <a href="#participate">Deelnemen</a>
+            </div>
+        </div>
+        <!-- <nav>
             <button class="square-button">
                 <span>GESCHIEDENIS</span>
             </button>
@@ -24,7 +33,7 @@
             <button class="square-button">
                 <span>DEELNEMEN</span>
             </button>
-        </nav>
+        </nav> -->
       </header>
       <div class="scroll-to-top">
         <a href="#header">
