@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.98 31.52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e64c0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient);
+        mix-blend-mode: multiply;
+        opacity: .8;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="14.99" cy="16.53" fx="14.99" fy="16.53" r="14.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000057"/>
+      <stop offset=".39" stop-color="#7474a4" stop-opacity=".54"/>
+      <stop offset=".79" stop-color="#d8d8e5" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-3">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="mobileversion">
+        <g>
+          <circle class="cls-4" cx="14.99" cy="16.53" r="14.99"/>
+          <circle class="cls-1" cx="10.95" cy="10.44" r="10.44"/>
+          <g>
+            <path class="cls-2" d="m14.19,6.49c-.4,0-.72.32-.72.72s.32.72.72.72.72-.32.72-.72-.32-.72-.72-.72Z"/>
+            <path class="cls-2" d="m11,7.41c-1.66,0-3.01,1.35-3.01,3.01s1.35,3.01,3.01,3.01,3.01-1.35,3.01-3.01-1.35-3.01-3.01-3.01Zm0,4.94c-1.06,0-1.93-.87-1.93-1.93s.87-1.93,1.93-1.93,1.93.87,1.93,1.93-.87,1.93-1.93,1.93Z"/>
+            <path class="cls-2" d="m13.4,16.54h-4.89c-2.03,0-3.68-1.65-3.68-3.68v-4.89c0-2.03,1.65-3.68,3.68-3.68h4.89c2.03,0,3.68,1.65,3.68,3.68v4.89c0,2.03-1.65,3.68-3.68,3.68Zm-4.89-11.08c-1.39,0-2.52,1.13-2.52,2.52v4.89c0,1.39,1.13,2.52,2.52,2.52h4.89c1.39,0,2.52-1.13,2.52-2.52v-4.89c0-1.39-1.13-2.52-2.52-2.52h-4.89Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
