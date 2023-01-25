@@ -18,11 +18,11 @@ header {
 }
 
 .logo {
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 .logo img {
-    width: 160px;
+    width: 80px;
 }
 
 .square-button,
@@ -97,5 +97,25 @@ nav button {
 }
 
 main {
-    margin: 100px;
+    margin: 50px;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    padding: 10px;
 }
