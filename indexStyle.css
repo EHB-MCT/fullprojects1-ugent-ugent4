@@ -6,7 +6,7 @@ html {
 body {
     margin: 0px;
     overflow: auto;
-    background-image: url("/rescources/index_mobile/background_graffiti.svg");
+    background-image: url("/rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
     background-size: cover;
     overflow-x: hidden;
 }
@@ -96,6 +96,7 @@ nav button {
     margin-right: 100px;
     margin-bottom: 50px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .scroll-to-top img {
@@ -159,7 +160,7 @@ main {
 }
 
 #doe-mee {
-    width: 270px;
+    width: 220px;
     position: absolute;
     top: 25%;
     left: 50%;
@@ -168,19 +169,107 @@ main {
 }
 
 #wereld {
-    width: 300px;
+    width: 250px;
     position: absolute;
-    top: 45%;
+    top: 37%;
     right: 0;
     transform: translate(10%, -50%);
     z-index: 3;
 }
 
 #beker {
-    width: 300px;
+    width: 220px;
     position: absolute;
-    top: 45%;
+    top: 38%;
     left: 0;
     transform: translate(0%, -110%);
-    z-index: 3;
+    z-index: 1;
+}
+
+#doodle1 {
+    width: 150px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(10%, -110%);
+    z-index: 0;
+}
+
+#doodle2 {
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(0%, -70%);
+    z-index: 0;
+}
+
+#missionBall {
+    width: 240px;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    transform: translate(-35%, 15%);
+    z-index: 2;
+}
+
+#visionBall {
+    width: 240px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    z-index: 2;
+}
+
+#missionBall button {
+    position: absolute;
+    top: 10%;
+    /* adjust as needed */
+    left: 25%;
+}
+
+#missionBall p {
+    position: absolute;
+    top: 28%;
+    /* adjust as needed */
+    left: 8%;
+}
+
+#visionBall p {
+    position: absolute;
+    top: 22%;
+    /* adjust as needed */
+    left: 15%;
+}
+
+#visionBall button {
+    position: absolute;
+    top: 10%;
+    /* adjust as needed */
+    left: 25%;
+}
+
+#missionBall button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    transform: rotate(5deg);
+    transform: rotate(-15deg);
+    transition-duration: 300ms;
+}
+
+#dottedMountain {
+    width: 500px;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    z-index: 0;
+}
+
+#blueDoodles {
+    width: 110%;
+    position: absolute;
+    bottom: 10%;
+    left: -5%;
+    z-index: 0;
 }
