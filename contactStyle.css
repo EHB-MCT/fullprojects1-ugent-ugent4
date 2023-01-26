@@ -91,6 +91,7 @@ body {
         background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
         background-size: cover;
 		text-align: center;
+        padding: 10px;
 	}
 
 	#flw img {
@@ -99,6 +100,16 @@ body {
 
 	footer img {
 		width: 50px;
-        margin-top: 30px;
+       
 	}
+
+    footer a{
+        margin-right: 20px;
+    }
+
+    footer p{
+        color: #1E64C0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+    }
 }
