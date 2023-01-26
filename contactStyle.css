@@ -1,92 +1,104 @@
-
-body{
-    margin: 0;
-    background-image: url("rescources/assets-contact-mobile-version/Asset\ 15.svg");
-    background-repeat: no-repeat; 
-
+body {
+	margin: 0;
+	background-image: url("rescources/assets-contact-mobile-version/Asset\ 15.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
+@media (min-width: 480px) {
+	.logo {
+		width: 60px;
+		margin: 20px;
+	}
 
+	.title {
+		margin-top: -20px;
+		font-size: 12px;
+		margin-left: 40px;
+		transform: rotate(-5deg);
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: white;
+		background-color: black;
+		padding-top: 1px;
+		padding-left: 15px;
+		padding-bottom: 5px;
+		width: 350px;
+		height: 50px;
+	}
 
-@media(min-width:480px){
-   body{
-    margin: 0;
-   }
+	.formulier {
+		display: flex;
+		text-align: right;
+		margin-right: 70px;
+	}
 
-    .logo{
-        width: 60px;
-        margin: 20px ;
-    }
+	.input {
+		margin-top: 20px;
+	}
 
-    .title{
-        margin-top: -20px;
-        font-size: 12px;
-        margin-left: 40px;
-        transform: rotate(-5deg);
-        font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
-        color: white;
-        background-color: black;
-        padding-top: 1px;
-        padding-left: 15px;
-        padding-bottom: 5px;
-        width: 350px;
-        height:50px
-    }
+	.anubis img {
+		width: 200px;
+		margin-left: -40px;
+		margin-top: 50px;
+	}
 
-    .formulier{
-        margin-top: 20px;
-        text-align: right;
-        margin-right: 70px;    
-        display: inline-block;   
-        
-    }
+	.dots {
+		margin-top: -200px;
+	}
 
-    .dots{
-      margin-top: -200px;
-      
-    }
+	#name {
+		border-color: black;
+		height: 8px;
+		border-radius: 19px;
+		margin: 5px;
+		padding: 5px;
+	}
 
-    #name{
-        border-color: black;
-        border-radius: 19px;
-        margin:5px ;
-        padding: 5px;
+	#firstname {
+		border-color: black;
+		border-radius: 19px;
+		margin: 5px;
+		padding: 5px;
+		height: 8px;
+	}
 
-    }
+	#question {
+		width: 250px;
+		height: 50px;
+		border-color: black;
+		border-radius: 19px;
+		margin: 5px;
+		padding: 5px;
+	}
 
-    #firstname{
-        border-color: black;
-        border-radius: 19px;
-        margin:5px ;
-        padding: 5px;
-     
-    }
+	#email {
+		border-color: black;
+		border-radius: 19px;
+		margin: 5px;
+		padding: 5px;
+		height: 8px;
+	}
 
-    #question {
-        width: 250px;
-        height: 100px;
-        border-color: black;
-        border-radius: 19px;
-        margin:5px ;
-        padding: 5px;
-    }
-   
-    #email{
-        
-        border-color: black;
-        border-radius: 19px;
-        margin:5px ;
-        padding: 5px;
-    }
+	#submit {
+		border-color: black;
+		margin: 5px;
+		padding: 5px;
+	}
 
-    #submit{
-        border-color: black;
-        margin:5px ;
-        padding: 5px;
+	/********footer****/
+	footer {
+		background-color: yellow;
+        background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
+        background-size: cover;
+		text-align: center;
+	}
 
-    
-    }
-    
+	#flw img {
+		width: 100px;
+	}
 
-
+	footer img {
+		width: 50px;
+        margin-top: 30px;
+	}
 }
