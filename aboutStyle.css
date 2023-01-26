@@ -1,3 +1,16 @@
 @media(min-width:480px){
     
 }
+
+html {
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+body {
+    margin: 0px;
+    overflow: auto;
+    background-image: url("/rescources/index_mobile/background_graffiti.svg");
+    background-size: cover;
+    overflow-x: hidden;
+}
