@@ -1,8 +1,8 @@
 body {
 	margin: 0;
-	background-image: url("rescources/assets-contact-mobile-version/Asset\ 15.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-image: url("rescources/assets-contact-mobile-version/background-contact-mobile_1.svg");
 }
 
 @media (min-width: 480px) {
@@ -12,7 +12,7 @@ body {
 	}
 
 	.title {
-		margin-top: -20px;
+		margin-top: 20px;
 		font-size: 12px;
 		margin-left: 40px;
 		transform: rotate(-5deg);
@@ -29,21 +29,11 @@ body {
 	.formulier {
 		display: flex;
 		text-align: right;
-		margin-right: 70px;
-	}
-
-	.input {
 		margin-top: 20px;
 	}
 
 	.anubis img {
-		width: 200px;
-		margin-left: -40px;
-		margin-top: 50px;
-	}
-
-	.dots {
-		margin-top: -200px;
+		width: 150px;
 	}
 
 	#name {
@@ -80,36 +70,63 @@ body {
 	}
 
 	#submit {
-		border-color: black;
-		margin: 5px;
-		padding: 5px;
+		width: 100px;
+		margin-right: 10px;
+		margin-top: 20px;
 	}
 
 	/********footer****/
 	footer {
-		background-color: yellow;
-        background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size: cover;
+		background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
+		background-size: cover;
 		text-align: center;
-        padding: 10px;
+		padding: 10px;
 	}
 
 	#flw img {
 		width: 100px;
 	}
-
-	footer img {
+	#ug img {
 		width: 50px;
-       
 	}
 
-    footer a{
-        margin-right: 20px;
-    }
+	footer img {
+		width: 35px;
+		margin-top: 10px;
+	}
 
-    footer p{
-        color: #1E64C0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 12px;
-    }
+	footer a {
+		margin-right: 10px;
+	}
+
+	footer p {
+		color: #1e64c0;
+		font-family: "Franklin Gothic Medium", Arial, sans-serif;
+		font-size: 12px;
+		margin-top: -5px;
+	}
+}
+
+@media (min-width: 1280px) {
+	header {
+		display: flex;
+	}
+	.logo {
+		width: 130px;
+		margin: 50px;
+	}
+
+	/*.menu-container ul li {
+        margin-right: 20px;
+        font-size: 20px;
+        display: inline-block;
+    }*/
+
+	.title {
+		font-size: 25px;
+		margin-left: 50px;
+		transform: rotate(-5deg);
+		width: 700px;
+		height: 100px;
+	}
 }
