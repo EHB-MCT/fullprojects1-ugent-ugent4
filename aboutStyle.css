@@ -8,12 +8,29 @@ html {
 body {
     margin: 0px;
     overflow: auto;
-    background-image: url("/rescources/assets-about/Graffiti_1-3.png"),url("/rescources/assets-contact-mobile-version/background\ paper.svg");
+    background-image:url("/rescources/assets-contact-mobile-version/background\ paper.svg");
     background-size: cover;
     overflow-x: hidden;
 }
 
-@media(min-width:480px){
+@media(max-width:480px){
+    
+    #graffiti {
+    width: 328px;
+    position: absolute;
+    top: 80%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#standbeeld {
+    width: 109px;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
   
 }
 
@@ -139,8 +156,11 @@ font-size: 20px;
     text-decoration: none;
     width: 100% -20px;
     display: block;
+    
 
 }
+
+
 
 .menu-container {
     position: relative;

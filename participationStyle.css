@@ -1,15 +1,13 @@
-/* Franklin Gothic, 500 Medium, 800 Heavy */
+/* Franklin Gothic, 500 Medium, 800 Heavy - Acumin Pro, 500 Medium */
 @import url("https://use.typekit.net/hfz6deq.css");
 
-/* Acumin Pro, 500 Medium */
-@import url("https://use.typekit.net/hfz6deq.css");
+
 
 body {
     margin: 0;
     font-family: "franklin-gothic-atf", sans-serif;
     /*font-family: "acumin-pro", sans-serif;*/
     /*font-weight: M500 OR H800;*/
-    /*font-style: normal;*/
     background-image: url(rescources/participation/background\ paper.svg);
 }
 
@@ -52,13 +50,13 @@ body {
 
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(8, minmax(50px, auto));
+    grid-template-rows: repeat(6, minmax(50px, auto));
     grid-row-gap: 60px;
 
     margin: 0px 35px;
 }
 
-.block-content-grid {
+.content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, minmax(50px, auto));
@@ -92,7 +90,7 @@ label {
     display: block;
 }
 
-.text-input {
+.t-input {
     color: #1E64C8;
     background-color: #fff;
     opacity: 0.6;
@@ -105,11 +103,31 @@ label {
     box-sizing: border-box;
 }
 
-input::placeholder {
+.text-field.text-input-long {
+    height: 125px;
+    border-radius: 25px;
+    padding-top: 8px;
+}
+
+.text-field.up-button {
+    height: 100px;
+    border-radius: 25px;
+    padding-top: 8px;
+
+    font-weight: 800;
+    text-align: center;
+}
+
+textarea, input {
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 500;
+}
+
+.t-input::placeholder {
     color: #1E64C8;
 }
 
-input:focus {
+.t-input:focus {
     outline: none !important;
     border: 2px solid #DB7CAA;
 }
@@ -148,4 +166,44 @@ input:focus {
     grid-row: 4;
 }
 
+.deelnemers {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.waarom-deelname {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+.slogan {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.upload-logo {
+    grid-column: 1/3;
+}
+
+.upload-logo img {
+    width: 20%;
+}
+
+.checkbox {
+    grid-column: 1/3;
+
+    display: block;
+}
+
+.checkbox img {
+    width: 105%;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    text-align: center;
+}
 /* ARTWORK */
