@@ -1,0 +1,151 @@
+/* Franklin Gothic, 500 Medium, 800 Heavy */
+@import url("https://use.typekit.net/hfz6deq.css");
+
+/* Acumin Pro, 500 Medium */
+@import url("https://use.typekit.net/hfz6deq.css");
+
+body {
+    margin: 0;
+    font-family: "franklin-gothic-atf", sans-serif;
+    /*font-family: "acumin-pro", sans-serif;*/
+    /*font-weight: M500 OR H800;*/
+    /*font-style: normal;*/
+    background-image: url(rescources/participation/background\ paper.svg);
+}
+
+.grid-wrapper {
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, minmax(50px, auto));
+    position: relative;
+}
+
+/*
+@media (min-width: 767px) {
+    .wrapper {
+        margin: 0px 30px;
+    }    
+}
+*/
+
+
+
+/* HEADER */
+
+
+
+
+
+/* FORM */
+.form-box {
+    grid-column: 1/13;
+    grid-row: 4/15;
+    background-color: #000;
+    border-radius: 50px;
+    opacity: 0.1;
+}
+
+.form-grid {
+    grid-column: 1/13;
+    grid-row: 4/15;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, minmax(50px, auto));
+    grid-row-gap: 60px;
+
+    margin: 0px 35px;
+}
+
+.block-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(50px, auto));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+
+label {
+    color: #1E64C8;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+
+    margin-bottom: 3px;
+    margin-left: 25px;
+
+    display: block;
+}
+
+.text-field {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+
+    padding: 20px 25px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    margin: 0px;
+    
+    display: block;
+}
+
+.text-input {
+    color: #1E64C8;
+    background-color: #fff;
+    opacity: 0.6;
+
+
+    width: 100%;
+    height: 38px;
+
+    display: block;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #1E64C8;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #DB7CAA;
+}
+
+.naam-school {margin-top: 125px;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.straat-nr {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+.stad {
+    grid-column: 1/2;
+    grid-row: 3;
+}
+.postcode {
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+.naam-leerkracht {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.email-leerkracht {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+.vakken-leerkracht {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.tel-leerkracht {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+/* ARTWORK */
