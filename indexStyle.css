@@ -8,6 +8,7 @@ body {
     overflow: auto;
     background-image: url("/rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
     background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
