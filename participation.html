@@ -21,6 +21,8 @@
         </div>
 
         <div class="form-grid">
+
+            <!-- School info -->
             <div class="content-grid">
 
                 <div class="naam-school">
@@ -46,6 +48,7 @@
 
             </div>
 
+            <!-- Leerkracht info -->
             <div class="content-grid">
 
                 <div class="naam-leerkracht">
@@ -71,6 +74,7 @@
 
             </div>
 
+            <!-- Deelname + slogan -->
             <div class="content-grid">
 
                 <div class="deelnemers">
@@ -90,20 +94,29 @@
                 </div>
 
                 <div class="upload-logo">
-                    <!--default upload button-->
                     <input type="file" id="actual-btn" hidden />
-
-                    <!--custom upload button-->
+                    <!-- ^upper default uplaod button to bottom custom button  -->
                     <label class="text-field t-input up-button" for="actual-btn">Upload logo <br>
                         <img src="rescources/participation/Add-img-icon.svg" alt="add image icon">
 
                     </label>
                 </div>
 
-                <div class="checkbox">
+                <div class="olympiade-checkbox">
                     <img src="rescources/participation/Olympiade-checkbox-shape.svg" alt="6-sided box">
-                    <p>Ook graag meedoen aan de Geschiedenis Olympiade 2024?</p>
-                    <p class="small-text">Vink hieronder aan!</p>
+
+                    <div class="text">Ook graag meedoen aan de Geschiedenis Olympiade 2024?</div>
+                    <div class="text t-small">Vink hieronder aan!</div>
+
+                    <label class="box-container">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="verzenden">
+                    <label for="verzenden"></label>
+                    <input type="submit" class="submit-button">
                 </div>
 
             </div>
