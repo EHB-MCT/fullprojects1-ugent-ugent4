@@ -14,17 +14,13 @@
 					<a href="index.html"><img src="rescources/index_mobile/logo_ug.svg" /></a>
 				</div>
 
-                <div class="menu-container">
-                    <!-- <img src="rescources/index_mobile/hamburger_menu.svg" class="menu-icon" onclick="toggleMenu()">
-                    <div id="menu" class="menu menu--"> 
-                        <ul>
-                            <li><a href="#About">ABOUT</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                            <li><a href="#deelnemen">DEELNEMEN</a></li>
-                        </ul>
-                
-                </div>
-				-->
+				<div class="topnav">
+					<ul>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="contact.html" class="contact">CONTACT</a></li>
+						<li><a href="participation.html" class="deelnemen">DEELNEMEN</a></li>
+					</ul>
+				</div>
 			</nav>
 
 			<div class="title">
@@ -36,24 +32,42 @@
 					<img src="rescources/assets-contact-mobile-version/anubis_1.svg" />
 				</div>
 				<div class="input">
-					<input type="text" id="name" placeholder="Naam" /><br />
-					<input type="text" id="firstname" placeholder="Voornaam" /><br />
-					<input type="text" id="question" placeholder="Stel hier jouw vragen/opmerkingen" /><br />
-					<input type="email" id="email" placeholder="Jouw e-mail" /><br />
-					<input type= "image" src ="rescources/assets-contact-mobile-version/buttonverzenden.svg" id="submit"/><br />
+					<div class="naam">
+						<label for="naam">Naam</label>
+						<input type="text" class="text-field t-input" maxlength="100" placeholder="Naam" required />
+					</div>
+
+					<div class="voornaam">
+						<label for="naam">Voornaam</label>
+						<input type="text" class="text-field t-input" placeholder="Voornaam" required/>
+					</div>
+
+					<div class="vragen">
+						<label for="naam">Vragen/opmerkingen:</label>
+						<input type="text" class="text-field t-input text-input-long" placeholder="Stel hier jouw vragen/opmerkingen" required />
+					</div>
+
+					<div>
+						<label for="naam">E-mailadres</label>
+						<input type="email" class="text-field t-input" placeholder="bv. ditiseenemail@email.com" required />
+					</div>
+
+					<div class="submit">
+						<input type="image" src="rescources/assets-contact-mobile-version/buttonverzenden.svg" id="submit-button" />
+					</div>
+
 				</div>
 			</div>
 		</div>
 
 		<footer>
-           
-            <a href="#" id="ug"><img src="rescources/index_mobile/logo_ug.svg" /></a>
+			<a href="#" id="ug"><img src="rescources/index_mobile/logo_ug.svg" /></a>
 			<a href="#" id="flw"><img src="rescources/index_mobile/logo_flw.svg" /></a>
-            <div class="icons">
-			<a href="#" ><img src="rescources/index_mobile/icoon_insta.svg" /></a>
-			<a href="#" ><img src="rescources/index_mobile/icoon_fb.svg" /></a>
-			<a href="#"><img src="rescources/index_mobile/icoon_linked_in.svg" /></a>
-            </div>
+			<div class="icons">
+				<a href="#"><img src="rescources/index_mobile/icoon_insta.svg" /></a>
+				<a href="#"><img src="rescources/index_mobile/icoon_fb.svg" /></a>
+				<a href="#"><img src="rescources/index_mobile/icoon_linked_in.svg" /></a>
+			</div>
 			<p>geschiedenis.olympiade@ugent.be</p>
 		</footer>
 	</body>

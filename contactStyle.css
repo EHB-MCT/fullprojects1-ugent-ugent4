@@ -1,230 +1,125 @@
 body {
 	margin: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url("rescources/assets-contact-desktop-version/background-desktop.svg");
-}
-	.logo {
-		width: 100px;
-	}
-
-	
-
-	.title h1{
-		font-size: 30px;
-		margin-left: 45px;
-		margin-top: -40px;
-		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-		color:white;
-		background-color: black;
-		width: 430px;
-		padding:20px;
-		transform: rotate(-2deg);
-
-		
-	}
-
-	.formulier {
-		display: flex;
-		text-align: right;
-		margin-top: 20px;
-	}
-
-	.anubis img {
-		width: 150px;
-	}
-
-	#name {
-		border-color: black;
-		height: 8px;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-	}
-
-	#firstname {
-		border-color: black;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-		height: 8px;
-	}
-
-	#question {
-		width: 250px;
-		height: 50px;
-		border-color: black;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-	}
-
-	#email {
-		border-color: black;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-		height: 8px;
-	}
-
-	#submit {
-		width: 100px;
-		margin-right: 10px;
-		margin-top: 20px;
-	}
-
-	footer {
-		background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
-		background-size: cover;
-		text-align: center;
-		padding: 10px;
-	}
-	
-	#flw img {
-		width: 100px;
-	}
-	#ug img {
-		width: 50px;
-	}
-	
-	footer img {
-		width: 35px;
-		margin-top: 10px;
-	}
-	
-	footer a {
-		margin-right: 10px;
-	}
-	
-	footer p {
-		color: #1e64c0;
-		font-family: "Franklin Gothic Medium", Arial, sans-serif;
-		font-size: 12px;
-		margin-top: -5px;
-	}
-
-
-	/****/
-	header {
-		display: flex;
-	}
-	.logo {
-		width: 130px;
-		margin: 50px;
-	}
-
-
-
-	.title {
-		font-size: 25px;
-		margin-left: 50px;
-		transform: rotate(-5deg);
-		width: 700px;
-		height: 100px;
-	}
-}
 }
 
-/**@media (min-width: 480px) {
-	.logo {
-		width: 60px;
-		margin: 20px;
-	}
-
-	.title {
-		margin-top: 20px;
-		font-size: 12px;
-		margin-left: 40px;
-		transform: rotate(-5deg);
-		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-		color: white;
-		background-color: black;
-		padding-top: 1px;
-		padding-left: 15px;
-		padding-bottom: 5px;
-		width: 350px;
-		height: 50px;
-	}
-
-	.formulier {
-		display: flex;
-		text-align: right;
-		margin-top: 20px;
-	}
-
-	.anubis img {
-		width: 150px;
-	}
-
-	#name {
-		border-color: black;
-		height: 8px;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-	}
-
-	#firstname {
-		border-color: black;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-		height: 8px;
-	}
-
-	#question {
-		width: 250px;
-		height: 50px;
-		border-color: black;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-	}
-
-	#email {
-		border-color: black;
-		border-radius: 19px;
-		margin: 5px;
-		padding: 5px;
-		height: 8px;
-	}
-
-	#submit {
-		width: 100px;
-		margin-right: 10px;
-		margin-top: 20px;
-	}
-
-	/********footer****/
-/**footer {
-	background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
-	background-size: cover;
-	text-align: center;
-	padding: 10px;
+.wrapper {
+	background-color: aqua;
+	margin: 0;
 }
 
-#flw img {
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
 	width: 100px;
-}
-#ug img {
-	width: 50px;
+	margin: 50px;
 }
 
-footer img {
-	width: 35px;
-	margin-top: 10px;
+.topnav {
+	margin-right: 50px;
 }
 
-footer a {
-	margin-right: 10px;
+.topnav ul li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 20px;
 }
 
-footer p {
-	color: #1e64c0;
-	font-family: "Franklin Gothic Medium", Arial, sans-serif;
-	font-size: 12px;
-	margin-top: -5px;
+.topnav a {
+	text-decoration: none;
+	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+	color: white;
 }
 
-@media (min-width: 1280px) {
-	
+.deelnemen {
+	background-color: #ffd200;
+	/**color: #DB7CAA;*/
+	padding: 25px;
+	border-radius: 25px;
+}
+
+.title {
+	background-color: black;
+	margin-left: 150px;
+	width: 500px;
+	color: white;
+	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+	padding: 5px;
+	transform: rotate(-5deg);
+}
+
+.title h1 {
+	margin-left: 25px;
+}
+
+.formulier {
+	background-color: yellow;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.anubis {
+	background-color: green;
+	width: 300px;
+	margin-top: 200px;
+}
+
+.input {
+	background-color: white;
+	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+	margin-right: 100px;
+}
+
+label {
+	color: #1e64c8;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 800;
+	margin-top: 20px;
+	margin-left: 5px;
+	display: block;
+}
+
+.text-field {
+	font-size: 13px;
+	padding: 10px;
+	border: 2px solid #000;
+	border-radius: 50px;
+	display: block;
+}
+
+.t-input {
+	color: #1e64c8;
+	background-color: #fff;
+	opacity: 0.6;
+	width: 400px;
+	height: 38px;
+	display: block;
+	box-sizing: border-box;
+}
+
+.text-field.text-input-long {
+	height: 130px;
+	border-radius: 25px;
+}
+.t-input::placeholder {
+	color: #1e64c8;
+}
+.t-input:focus {
+	outline: none !important;
+	border: 2px solid #db7caa;
+}
+
+#submit-button {
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 240px;
+}
+
+footer {
+	background-color: darkmagenta;
+}
