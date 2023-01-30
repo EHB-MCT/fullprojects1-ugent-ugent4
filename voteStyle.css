@@ -96,3 +96,44 @@ nav {
 .title h1 {
 	margin-left: 25px;
 }
+
+#submit-button {
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 240px;
+}
+
+
+
+
+/**Footer**/
+footer {
+	background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	align-items: center;
+}
+
+.icon-school img {
+	width: 70px;
+	margin-right: 30px;
+}
+
+.icons img {
+	width: 40px;
+	margin-right: 30px;
+}
+
+#flw img {
+	width: 120px;
+	margin-bottom: 10px;
+}
+
+footer p {
+	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+	color: #1e64c8;
+	font-size: 13px;
+}
