@@ -50,7 +50,7 @@ body {
 
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(6, minmax(50px, auto));
+    grid-template-rows: repeat(3, minmax(50px, auto));
     grid-row-gap: 60px;
 
     margin: 0px 35px;
@@ -132,6 +132,7 @@ textarea, input {
     border: 2px solid #DB7CAA;
 }
 
+/* School */
 .naam-school {margin-top: 125px;
     grid-column: 1/3;
     grid-row: 1;
@@ -149,6 +150,7 @@ textarea, input {
     grid-row: 3;
 }
 
+/* Teacher */
 .naam-leerkracht {
     grid-column: 1/3;
     grid-row: 1;
@@ -166,6 +168,7 @@ textarea, input {
     grid-row: 4;
 }
 
+/* Participating */
 .deelnemers {
     grid-column: 1/3;
     grid-row: 1;
@@ -178,15 +181,14 @@ textarea, input {
     grid-column: 1/3;
     grid-row: 3;
 }
-
 .upload-logo {
     grid-column: 1/3;
 }
-
 .upload-logo img {
     width: 20%;
 }
 
+/* Olympiade yes-maybe-no */
 .olympiade-checkbox {
     grid-column: 1/3;
     position: relative;
@@ -286,14 +288,28 @@ textarea, input {
     transform: rotate(35deg);
 }
 
-
+/* Send button */
 .verzenden {
     grid-column: 1/3;
 
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px 10% 30px 10%;
+}
 
+.hide {
+    margin-left: 12px;
+    margin-right: -12px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+
+    display: none;
+}
+
+.submit-button:hover ~ .hide {
+    display: block;
+}
+
+.verzenden:hover {
+    margin-bottom: -16.5px;
 }
 
 .submit-button {
@@ -313,7 +329,13 @@ textarea, input {
     background-color: #DB7CAA;
 }
 
+.submit-button:hover {
+    background-color: #7F4C63;
+}
 
+
+
+/* FOOTER */
 
 
 
