@@ -179,11 +179,11 @@ main {
 }
 
 #wereld {
-    width: 250px;
+    width: 170px;
     position: absolute;
     top: 37%;
     right: 0;
-    transform: translate(10%, -50%);
+    transform: translate(0%, -60%);
     z-index: 3;
 }
 
@@ -214,60 +214,6 @@ main {
     z-index: 0;
 }
 
-#missionBall {
-    width: 240px;
-    position: absolute;
-    bottom: 35%;
-    left: 25%;
-    transform: translate(-35%, 15%);
-    z-index: 2;
-}
-
-#visionBall {
-    width: 240px;
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
-    z-index: 2;
-}
-
-#missionBall button {
-    position: absolute;
-    top: 10%;
-    /* adjust as needed */
-    left: 25%;
-}
-
-#missionBall p {
-    position: absolute;
-    top: 28%;
-    /* adjust as needed */
-    left: 8%;
-}
-
-#visionBall p {
-    position: absolute;
-    top: 22%;
-    /* adjust as needed */
-    left: 15%;
-}
-
-#visionBall button {
-    position: absolute;
-    top: 10%;
-    /* adjust as needed */
-    left: 25%;
-}
-
-#missionBall button:hover {
-    background-color: black;
-    border-color: black;
-    color: white;
-    transform: rotate(5deg);
-    transform: rotate(-15deg);
-    transition-duration: 300ms;
-}
-
 #dottedMountain {
     width: 400px;
     position: absolute;
@@ -293,3 +239,105 @@ main {
     text-align: center;
     z-index: 5000;
 }
+
+#balls {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#missionBall,
+#visionBall {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#missionBall button,
+#visionBall button {
+    margin-top: 20px;
+}
+
+#missionBall p,
+#visionBall p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#missionBall button:hover,
+#visionBall button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    transform: rotate(5deg);
+    transform: rotate(-15deg);
+    transition-duration: 300ms;
+}
+
+/* #missionBall {
+    width: 240px;
+    bottom: 35%;
+    left: 25%;
+    transform: translate(-35%, 15%);
+    z-index: 2;
+}
+
+#visionBall {
+    width: 240px;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    z-index: 2;
+}
+
+#missionBall button {
+    position: absolute;
+    top: 10%;
+    /* adjust as needed */
+/*
+    left: 25%;
+}
+
+#missionBall p {
+    position: absolute;
+    top: 28%;
+    /* adjust as needed */
+/*
+    left: 8%;
+}
+
+#visionBall p {
+    position: absolute;
+    top: 22%;
+    /* adjust as needed */
+/*
+    left: 15%;
+}
+
+#visionBall button {
+    position: absolute;
+    top: 10%;
+    /* adjust as needed */
+/*
+    left: 25%;
+}
+
+#missionBall button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    transform: rotate(5deg);
+    transform: rotate(-15deg);
+    transition-duration: 300ms;
+} */
