@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Define font styles */
 body {
 	margin: 0px;
@@ -122,3 +123,92 @@ a:hover {
 	margin: 0px;
 	margin-left: 100px;
 }
+=======
+    /* Define font styles */
+    body {
+        margin: 0px;
+        font-family: Arial, sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, p {
+        color: #007DC5;
+        font-family: Arial, sans-serif;
+      }
+      .fontSecondary {
+        font-family: Arial, sans-serif;
+        font-style: italic;
+      }
+  
+      /* Define font sizes */
+      h1 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+      }
+  
+      /* Define colors */
+      .primary {
+        color: #007DC5;
+      }
+      .secondary {
+        color: #FFDD00;
+      }
+      .tertiary {
+        color: #EE2735;
+      }
+      .bg-primary {
+        background-color: #007DC5;
+      }
+      .bg-secondary {
+        background-color: #FFDD00;
+      }
+      .bg-tertiary {
+        background-color: #EE2735;
+      }
+      .bg-soft-colour {
+        background-color: #000;
+      }
+      .bg-soft-white{
+        background-color: white;
+      }
+  
+      /* Define button styles */
+      a {
+        color: white;
+        background-color: #007DC5;
+        text-decoration: none;
+        border-radius: 0;
+        }
+        .smallbtn {
+        padding: 10px 20px;
+        }
+        .bigbtn {
+        padding: 15px 25px;
+        font-size: 24px;
+        }
+
+        a:hover {
+          background-color: gray;
+        }
+
+      /* Style for the text in the middle of the page */
+      .center-text {
+        text-align: center;
+        color: white;
+        padding: 100px;
+        margin: 0px;
+      }
+      .outlined-text{
+        text-align:left;
+        color: #1a1b1f;
+        padding: 100px;
+        margin: 0px;
+        margin-left: 100px;
+      }
+>>>>>>> Stashed changes
