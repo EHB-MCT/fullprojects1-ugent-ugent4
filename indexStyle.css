@@ -3,8 +3,15 @@ html {
     overflow: auto;
 }
 
+.container {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
-    margin: 0px;
+    width: 100vw;
+    height: 100vw;
+    margin: 0;
     overflow: auto;
     background-image: url("/rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
     background-size: cover;
@@ -21,13 +28,13 @@ header {
     padding: 10px;
     width: calc(100% - 20px);
     top: -20px;
-    overflow: hidden;
     z-index: 5;
 }
 
 .logo {
     margin-top: 20px;
     margin-left: 50px;
+    z-index: 2;
 }
 
 .logo img {
@@ -262,9 +269,9 @@ main {
 }
 
 #dottedMountain {
-    width: 500px;
+    width: 400px;
     position: absolute;
-    bottom: -3%;
+    bottom: -0%;
     left: 0;
     z-index: 0;
 }
