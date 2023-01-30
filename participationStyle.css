@@ -39,7 +39,12 @@ body {
 
 
 /* HEADER */
+header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
 
+}
 
 
 
@@ -348,8 +353,6 @@ textarea, input {
 footer {
     grid-column: 1/13;
     grid-row: 16/17;
-
-
     /*
     background-image: url(rescources/participation/Footer_background.svg);
     */
