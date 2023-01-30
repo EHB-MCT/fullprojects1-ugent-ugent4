@@ -4,7 +4,9 @@ html {
 }
 
 body {
-    margin: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     overflow: auto;
     background-image: url("/rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
     background-size: cover;
@@ -21,13 +23,13 @@ header {
     padding: 10px;
     width: calc(100% - 20px);
     top: -20px;
-    overflow: hidden;
     z-index: 5;
 }
 
 .logo {
     margin-top: 20px;
     margin-left: 50px;
+    z-index: 2;
 }
 
 .logo img {
@@ -162,21 +164,21 @@ main {
     z-index: 100;
 }
 
+#doe-mee-container {
+    display: flex;
+    justify-content: center;
+}
+
 #doe-mee {
-    width: 220px;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    width: 200px;
 }
 
 #wereld {
-    width: 250px;
+    width: 170px;
     position: absolute;
     top: 37%;
     right: 0;
-    transform: translate(10%, -50%);
+    transform: translate(0%, -60%);
     z-index: 3;
 }
 
@@ -207,64 +209,10 @@ main {
     z-index: 0;
 }
 
-#missionBall {
-    width: 240px;
-    position: absolute;
-    bottom: 35%;
-    left: 25%;
-    transform: translate(-35%, 15%);
-    z-index: 2;
-}
-
-#visionBall {
-    width: 240px;
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
-    z-index: 2;
-}
-
-#missionBall button {
-    position: absolute;
-    top: 10%;
-    /* adjust as needed */
-    left: 25%;
-}
-
-#missionBall p {
-    position: absolute;
-    top: 28%;
-    /* adjust as needed */
-    left: 8%;
-}
-
-#visionBall p {
-    position: absolute;
-    top: 22%;
-    /* adjust as needed */
-    left: 15%;
-}
-
-#visionBall button {
-    position: absolute;
-    top: 10%;
-    /* adjust as needed */
-    left: 25%;
-}
-
-#missionBall button:hover {
-    background-color: black;
-    border-color: black;
-    color: white;
-    transform: rotate(5deg);
-    transform: rotate(-15deg);
-    transition-duration: 300ms;
-}
-
 #dottedMountain {
-    width: 500px;
+    width: 400px;
     position: absolute;
-    bottom: -3%;
+    bottom: -0%;
     left: 0;
     z-index: 0;
 }
@@ -279,10 +227,58 @@ main {
 
 .image-container {
     width: 200px;
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     z-index: 5000;
+}
+
+#balls {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#missionBall,
+#visionBall {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#missionBall img,
+#visionBall img {
+    width: 240px;
+    height: 240px;
+}
+
+#missionBall button,
+#visionBall button {
+    margin-bottom: 150px;
+    position: absolute;
+}
+
+#missionBall p,
+#visionBall p {
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+    width: 190px;
+}
+
+#missionBall button:hover,
+#visionBall button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+    transform: rotate(5deg);
+    transform: rotate(-15deg);
+    transition-duration: 300ms;
 }
