@@ -7,7 +7,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	height: 100%;
 	width: 100%;
 }
 
@@ -89,10 +88,11 @@ nav {
 .title {
 	background-color: black;
 	margin-left: 150px;
-	width: 500px;
+	width: 400px;
 	color: white;
 	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	padding: 5px;
+	font-size: 12px;
+	padding: 1px;
 	transform: rotate(-5deg);
 }
 
@@ -101,16 +101,33 @@ nav {
 }
 
 .postit img {
-	height: 100vw;
+	width: 900px;
 	margin-left: 300px;
 }
 
-#submit-button {
-	width: 150px;
-	margin-top: 20px;
-	margin-left: 240px;
+section {
+	display: flex;
+}
+.submit-button {
+	margin-left: -500px;
+	margin-top: 580px;
+	color: black;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 800;
+	text-align: center;
+
+	padding: 10px 25px;
+	border: 2px solid #000;
+
+	background-color: white;
 }
 
+.next-page {
+	width: 100px;
+	margin-left: -200px;
+	margin-top: 550px;
+}
 /**************************************Footer*************************************/
 footer {
 	background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
