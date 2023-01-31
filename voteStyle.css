@@ -3,7 +3,12 @@ body {
 }
 
 .wrapper {
-	background-color: aqua;
+	background-image: url("rescources/vote-page-desk/background-vote_2.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: 100%;
+	width: 100%;
 }
 
 .logo img {
@@ -96,7 +101,8 @@ nav {
 }
 
 .postit img {
-	height: 300px;
+	height: 100vw;
+	margin-left: 300px;
 }
 
 #submit-button {
@@ -105,7 +111,7 @@ nav {
 	margin-left: 240px;
 }
 
-/**Footer**/
+/**************************************Footer*************************************/
 footer {
 	background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
 	background-repeat: no-repeat;
