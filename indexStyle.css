@@ -96,9 +96,9 @@ nav button {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 0;
+    bottom: 3%;
     right: 0;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-bottom: 50px;
     cursor: pointer;
     z-index: 10;
@@ -171,6 +171,7 @@ main {
 
 #doe-mee {
     width: 200px;
+    z-index: 1;
 }
 
 #wereld {
@@ -226,7 +227,8 @@ main {
 }
 
 .image-container {
-    width: 200px;
+    width: 40%;
+    max-width: 250px;
     position: fixed;
     bottom: 5%;
     left: 50%;
@@ -261,7 +263,7 @@ main {
 
 #missionBall button,
 #visionBall button {
-    margin-bottom: 150px;
+    margin-bottom: 160px;
     position: absolute;
 }
 
@@ -269,7 +271,7 @@ main {
 #visionBall p {
     position: absolute;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 190px;
 }
 
@@ -281,4 +283,33 @@ main {
     transform: rotate(5deg);
     transform: rotate(-15deg);
     transition-duration: 300ms;
+}
+
+#post-its {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#post-its h1 {
+    min-width: 300px;
+    min-height: 70px;
+    background-color: black;
+    color: white;
+    transform: rotate(5deg);
+    transform: rotate(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.post-it {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
 }
