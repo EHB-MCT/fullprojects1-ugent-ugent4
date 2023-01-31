@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Stem nu op je favoriete logo!</title>
 		<link rel="stylesheet" href="voteStyle.css" />
+		<script src="vote.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -13,40 +14,54 @@
 				<div class="logo">
 					<a href="index.html"><img src="rescources/index_mobile/logo_ug.svg" /></a>
 				</div>
+
 				<div class="menu-container">
-					<!--<img src="rescources/index_mobile/hamburger_menu.svg" class="menu-icon" onclick="toggleMenu()">-->
+					<img src="rescources/index_mobile/hamburger_menu.svg" class="menu-icon" onclick="toggleMenu()" />
+					<div id="menu" class="menu menu--">
+						<a href="/about.html">ABOUT</a>
+						<a href="/contact.html">CONTACT</a>
+
+						<a href="/vote.html">VOTE</a>
+					</div>
+				</div>
+
+				<!--<div class="menu-container">
+					<img src="rescources/index_mobile/hamburger_menu.svg" class="menu-icon" onclick="toggleMenu()">
 					<div class="topnav">
 						<ul>
 							<li><a href="about.html" class="about">ABOUT</a></li>
 							<li><a href="contact.html" class="contact">CONTACT</a></li>
-							<!--<li><a href="participation.html" class="deelnemen">DEELNEMEN</a></li> -->
+							<li><a href="participation.html" class="deelnemen">DEELNEMEN</a></li> 
 							<li><a href="vote.html" class="vote">VOTE</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> 
+				-->
 			</nav>
+
 			<div class="title">
 				<h1>MAAK JOUW KEUZE</h1>
 			</div>
+
 			<section>
 				<div class="postit">
-					<img src="rescources/vote-page-desk/giant-postit.svg" />
+					<a href="#logo"><img src="rescources/vote-page-desk/logos_2.svg" /></a>
 
 					<!--<input type="image" src="rescources/assets-contact-mobile-version/buttonverzenden.svg" id="submit-button" /> -->
 				</div>
 
 				<div class="send">
+					<div class="next-page">
+						<img src="rescources/vote-page-desk/next-page.svg" />
+					</div>
 					<label for="verzenden"></label>
 					<input id="sended" type="submit" class="submit-button" value="VERZENDEN" />
+					
+
 				</div>
 
 				
-				<div class="next-page">
-					<img src="rescources/vote-page-desk/next-page.svg" />
-				</div>
 			</section>
-
-			
 		</div>
 
 		<footer>
