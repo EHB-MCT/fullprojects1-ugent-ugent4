@@ -139,7 +139,7 @@ a {
     margin: 0px 15px;
 
     position: absolute;
-    transition: background-color .3s ease;
+    transition: .3s ease;
     cursor: pointer;
 }
 
