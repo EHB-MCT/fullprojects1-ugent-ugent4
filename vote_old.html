@@ -4,32 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Stem op jouw favoriete logo!</title>
+		<title>Stem nu op je favoriete logo!</title>
 		<link rel="stylesheet" href="voteStyle.css" />
 		<script src="vote.js"></script>
-		<link rel="icon" type="image/x-icon" href="/rescources/index_mobile/logo_ug.svg" />
 	</head>
 	<body>
 		<div class="wrapper">
-			<nav class="header">
+			<nav>
 				<div class="logo">
 					<a href="index.html"><img src="rescources/index_mobile/logo_ug.svg" /></a>
 				</div>
-
 				<div class="menu-container">
 					<img src="rescources/index_mobile/hamburger_menu.svg" class="menu-icon" onclick="toggleMenu()" />
-					<div id="menu" class="menu-menu">
-						<a href="/about.html" class="about"> ABOUT </a>
-						<a href="/contact.html" class="contact">CONTACT</a>
-						<a href="/vote.html" class="vote">VOTE</a>
+					<div id="menu" class="menu menu--">
+						<a href="/about.html">ABOUT</a>
+						<a href="/contact.html">CONTACT</a>
+						<a href="/vote.html">VOTE</a>
 					</div>
 				</div>
 			</nav>
-
+			
 			<div class="title">
 				<h1>MAAK JOUW KEUZE</h1>
 			</div>
-
 			<section>
 				<div class="postit">
 					<a href="#logo"><img src="rescources/vote-page-desk/logos_2.svg" /></a>
@@ -43,7 +40,7 @@
 					</div>
 
 					<label for="verzenden"></label>
-					<input id="sended" type="submit" class="submit-button" value="VERZENDEN" />
+					<input id="sended" type="submit" class="submit-button" value="VERZENDEN" /> 
 				</div>
 			</section>
 		</div>

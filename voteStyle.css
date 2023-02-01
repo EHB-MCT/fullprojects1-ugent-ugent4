@@ -17,9 +17,14 @@ body {
 		align-items: center;
 	}
 	/***********************Hamburgermenu***************************/
+
 	.menu-container {
 		position: relative;
 		z-index: 100;
+	}
+
+	.menu-container img {
+		display: block;
 	}
 
 	.menu-icon {
@@ -33,7 +38,7 @@ body {
 		z-index: 100;
 	}
 
-	.menu {
+	.menu-menu {
 		display: none;
 		position: absolute;
 		top: 50px;
@@ -49,16 +54,36 @@ body {
 		z-index: 100;
 	}
 
-	.menu a {
+	.menu-menu a.about {
 		text-decoration: none;
-		font-size: 20pt;
+		font-size: 15px;
 		color: black;
 		margin-bottom: 10px;
 		display: block;
 		font-family: "Franklin Gothic heavy", Arial, sans-serif;
 	}
 
-	.menu a:hover {
+	.menu-menu a.contact {
+		text-decoration: none;
+		font-size: 15px;
+		color: black;
+		margin-bottom: 10px;
+		display: block;
+		font-family: "Franklin Gothic heavy", Arial, sans-serif;
+	}
+
+	.menu-menu a.vote {
+		text-decoration: none;
+		color: #000;
+		font-size: 15px;
+		color: none;
+		width: 90px;
+		height: 5px;
+		display: block;
+		font-family: "Franklin Gothic heavy", Arial, sans-serif;
+	}
+
+	.menu-menu a:hover {
 		color: #0077ff;
 	}
 
@@ -69,6 +94,7 @@ body {
 		transition: all 0.5s ease-in-out;
 		z-index: 100;
 	}
+
 	/***MAAK JOUW KEUZE****/
 
 	.title {
@@ -179,19 +205,63 @@ body {
 	}
 }
 
-@media (min-width: 1280px) {
-	.menu-container img{
-		display:  none;
-
+@media (min-width: 750px) {
+	body {
+		margin: 0;
 	}
 
-	.menu-container{
-		position: relative;
-		z-index: 100;
-
+	.menu-menu a {
+		margin-right: 50px;
+		margin-right: 30px;
+		font-size: 30px;
+	}
+	.menu-menu a.about {
+		text-decoration: none;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: black;
+	}
+	.menu-menu a.contact {
+		display: inline-block;
+		padding: 0px;
+		text-decoration: none;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: black;
 	}
 
+	.vote {
+		background-color: #ffd200;
+		padding: 25px;
+		border-radius: 25px;
+	}
 
+	.menu-menu a.vote {
+		background-color: black;
+		text-decoration: none;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: #ffd200;
+	}
+
+	.menu-menu a.about:hover {
+		display: inline-block;
+		background-color: black;
+		border-color: black;
+		transform: rotate(5deg);
+		transform: rotate(-15deg);
+		transition-duration: 300ms;
+		padding: 15px;
+		color: white;
+	}
+
+	.menu-menu a.contact:hover {
+		display: inline-block;
+		background-color: black;
+		border-color: black;
+		transform: rotate(5deg);
+		transform: rotate(-15deg);
+		transition-duration: 300ms;
+		padding: 15px;
+		color: white;
+	}
 
 	.title {
 		font-size: 20px;
@@ -200,16 +270,16 @@ body {
 	}
 	.postit img {
 		height: 200vh;
-		margin-left: 150px;
+		margin-left: 300px;
 	}
-
+	.send {
+		display: block;
+	}
 	.submit-button {
 		width: 200px;
 		height: 50px;
 		font-size: 20px;
-		margin-right: 550px;
-		margin-top: 80px;
-		margin-left: -300px;
+		margin-left: 600px;
 	}
 
 	.submit-button a:hover {
@@ -217,7 +287,7 @@ body {
 	}
 
 	.next-page {
-		margin-left: 500px;
+		margin-left: 600px;
 		margin-top: -10px;
 	}
 
@@ -225,7 +295,7 @@ body {
 		width: 300px;
 	}
 
-	footer{
+	footer {
 		padding: 40px;
 	}
 
