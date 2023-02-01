@@ -261,9 +261,12 @@ footer p {
 		text-decoration: none;
 		margin-bottom: 20px;
 		font-size: 15px;
+		background-color: white;
+		padding: 0px;
 		color: black;
 		width: 70px;
 		height: 5px;
+		transform: rotate(0deg);
 		display: block;
 		font-family: "Franklin Gothic heavy", Arial, sans-serif;
 	}
