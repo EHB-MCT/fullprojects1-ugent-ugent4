@@ -12,8 +12,7 @@
 
 <body>
 
-    <!-- Grid under form grid -->
-    <div class="grid-wrapper">
+    <div class="background-grid">
 
         <header>
 
@@ -47,128 +46,138 @@
 
         </header>
 
-        <!-- Title -->
-        <div class="title">
-            <div class="title-name">
-                Deelnameformulier⠀
-            </div>
-
-            <div class="title-image">
-                <img src="rescources/participation/Dots-left_3.png" alt="">
-            </div>
+        <div class="artwork">
         </div>
 
-        <!-- Gray bg box -->
-        <div class="form-box"></div>
+        <!-- Grid under form grid -->
+        <div class="grid-wrapper">
 
-        <div class="form-grid">
-
-            <!-- School info -->
-            <div class="content-grid school-grid">
-
-                <div class="naam-school">
-                    <label for="naam">Naam school</label>
-                    <input type="text" class="text-field t-input" maxlength="100" placeholder="Naam" required>
+            <!-- Title -->
+            <div class="title">
+                <div class="title-name">
+                    Deelnameformulier⠀
                 </div>
 
-                <div class="straat-nr">
-                    <label for="naam">Straat + nr.</label>
-                    <input type="text" class="text-field t-input" maxlength="50" placeholder="bv. Huisstraat 2"
-                        required>
+                <div class="title-image">
+                    <img src="rescources/participation/Dots-left_3.png" alt="">
                 </div>
-
-                <div class="stad">
-                    <label for="naam">Stad</label>
-                    <input type="text" class="text-field t-input" maxlength="30" placeholder="bv. Gent" required>
-                </div>
-
-                <div class="postcode">
-                    <label for="naam">Postcode</label>
-                    <input type="text" class="text-field t-input" maxlength="4" placeholder="bv. 9000" required>
-                </div>
-
             </div>
 
-            <!-- Leerkracht info -->
-            <div class="content-grid teacher-grid">
+            <!-- Gray bg box -->
+            <div class="form-box"></div>
 
-                <div class="naam-leerkracht">
-                    <label for="naam">Naam leerkracht</label>
-                    <input type="text" class="text-field t-input" maxlength="50" placeholder="Naam Achternaam" required>
-                </div>
+            <div class="form-grid">
 
-                <div class="email-leerkracht">
-                    <label for="naam">Email leerkracht</label>
-                    <input type="text" class="text-field t-input" maxlength="50"
-                        placeholder="bv. ditiseenemail@email.com" required>
-                </div>
+                <!-- School info -->
+                <div class="content-grid school-grid">
 
-                <div class="vakken-leerkracht">
-                    <label for="naam">Welk(e) vak(ken) geeft de leerkracht</label>
-                    <input type="text" class="text-field t-input" maxlength="150" placeholder="bv. geschiedenis, ...">
-                </div>
-
-                <div class="tel-leerkracht">
-                    <label for="naam">Tel. leerkracht</label>
-                    <input type="text" class="text-field t-input" maxlength="10" placeholder="bv.  0123 45 67 89">
-                </div>
-
-            </div>
-
-            <!-- Deelname + slogan -->
-            <div class="content-grid participation-grid">
-
-                <div class="deelnemers">
-                    <label for="naam">Aantal deelnemers</label>
-                    <input type="text" class="text-field t-input" maxlength="3" placeholder="bv. 5" required>
-                </div>
-
-                <div class="waarom-deelname">
-                    <label for="naam">Waarom deelname</label>
-                    <textarea type="text" class="text-field t-input text-input-long" maxlength="256"
-                        placeholder="Korte uitleg waarom" required></textarea>
-                </div>
-
-                <div class="slogan">
-                    <label for="naam">Slogan logo</label>
-                    <input type="text" class="text-field t-input" maxlength="150" placeholder="Slogan" required>
-                </div>
-
-                <div class="upload-logo">
-                    <input type="file" id="actual-btn" hidden />
-                    <!-- ^upper default uplaod button to bottom custom button  -->
-                    <label class="text-field t-input up-button" for="actual-btn">Upload logo <br>
-                        <img src="rescources/participation/Add-img-icon.svg" alt="add image icon">
-
-                    </label>
-                </div>
-
-                <div class="olympiade-checkbox">
-                    <img src="rescources/participation/Olympiade-checkbox-shape.svg" alt="6-sided box">
-
-                    <div class="text">Ook graag meedoen aan de Geschiedenis Olympiade 2024?</div>
-                    <div class="text t-small">Vink hieronder aan!</div>
-
-                    <label class="box-container">
-                        <input type="checkbox" class="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-
-                <div class="verzenden">
-                    <label for="verzenden"></label>
-                    <input id="sended" type="submit" class="submit-button" value="Verzenden!">
-
-                    <div class="hide">
-                        <img src="rescources/participation/Button-submit-hover.svg" alt="">
+                    <div class="naam-school">
+                        <label for="naam">Naam school</label>
+                        <input type="text" class="text-field t-input" maxlength="100" placeholder="Naam" required>
                     </div>
+
+                    <div class="straat-nr">
+                        <label for="naam">Straat + nr.</label>
+                        <input type="text" class="text-field t-input" maxlength="50" placeholder="bv. Huisstraat 2"
+                            required>
+                    </div>
+
+                    <div class="stad">
+                        <label for="naam">Stad</label>
+                        <input type="text" class="text-field t-input" maxlength="30" placeholder="bv. Gent" required>
+                    </div>
+
+                    <div class="postcode">
+                        <label for="naam">Postcode</label>
+                        <input type="text" class="text-field t-input" maxlength="4" placeholder="bv. 9000" required>
+                    </div>
+
+                </div>
+
+                <!-- Leerkracht info -->
+                <div class="content-grid teacher-grid">
+
+                    <div class="naam-leerkracht">
+                        <label for="naam">Naam leerkracht</label>
+                        <input type="text" class="text-field t-input" maxlength="50" placeholder="Naam Achternaam"
+                            required>
+                    </div>
+
+                    <div class="email-leerkracht">
+                        <label for="naam">Email leerkracht</label>
+                        <input type="text" class="text-field t-input" maxlength="50"
+                            placeholder="bv. ditiseenemail@email.com" required>
+                    </div>
+
+                    <div class="vakken-leerkracht">
+                        <label for="naam">Welk(e) vak(ken) geeft de leerkracht</label>
+                        <input type="text" class="text-field t-input" maxlength="150"
+                            placeholder="bv. geschiedenis, ...">
+                    </div>
+
+                    <div class="tel-leerkracht">
+                        <label for="naam">Tel. leerkracht</label>
+                        <input type="text" class="text-field t-input" maxlength="10" placeholder="bv.  0123 45 67 89">
+                    </div>
+
+                </div>
+
+                <!-- Deelname + slogan -->
+                <div class="content-grid participation-grid">
+
+                    <div class="deelnemers">
+                        <label for="naam">Aantal deelnemers</label>
+                        <input type="text" class="text-field t-input" maxlength="3" placeholder="bv. 5" required>
+                    </div>
+
+                    <div class="waarom-deelname">
+                        <label for="naam">Waarom deelname</label>
+                        <textarea type="text" class="text-field t-input text-input-long" maxlength="256"
+                            placeholder="Korte uitleg waarom" required></textarea>
+                    </div>
+
+                    <div class="slogan">
+                        <label for="naam">Slogan logo</label>
+                        <input type="text" class="text-field t-input" maxlength="150" placeholder="Slogan" required>
+                    </div>
+
+                    <div class="upload-logo">
+                        <input type="file" id="actual-btn" hidden />
+                        <!-- ^upper default uplaod button to bottom custom button  -->
+                        <label class="text-field t-input up-button" for="actual-btn">Upload logo <br>
+                            <img src="rescources/participation/Add-img-icon.svg" alt="add image icon">
+
+                        </label>
+                    </div>
+
+                    <div class="olympiade-checkbox">
+                        <img src="rescources/participation/Olympiade-checkbox-shape.svg" alt="6-sided box">
+
+                        <div class="text">Ook graag meedoen aan de Geschiedenis Olympiade 2024?</div>
+                        <div class="text t-small">Vink hieronder aan!</div>
+
+                        <label class="box-container">
+                            <input type="checkbox" class="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="verzenden">
+                        <label for="verzenden"></label>
+                        <input id="sended" type="submit" class="submit-button" value="Verzenden!">
+
+                        <div class="hide">
+                            <img src="rescources/participation/Button-submit-hover.svg" alt="">
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <div class="file-download">
 
-        <div class="file-download">
+            </div>
 
         </div>
 
@@ -224,9 +233,6 @@
             </div>
 
         </footer>
-
-        <div class="artwork">
-        </div>
 
     </div>
 
