@@ -16,7 +16,59 @@ body {
 		justify-content: space-between;
 		align-items: center;
 	}
-
+	/***********************Hamburgermenu***************************/
+	.menu-container {
+		position: relative;
+		z-index: 100;
+	}
+	
+	.menu-icon {
+		position: absolute;
+		width: 70px;
+		margin-top: -20px;
+		margin-right: 50px;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		z-index: 100;
+	}
+	
+	.menu {
+		display: none;
+		position: absolute;
+		top: 50px;
+		right: 0;
+		background-color: white;
+		padding: 10px;
+		margin-right: 50px;
+		box-shadow: 0px 0px 10px #ccc;
+		border-radius: 5px;
+		transform: translateX(200%);
+		transition: all 0.5s ease-in-out;
+		visibility: hidden;
+		z-index: 100;
+	}
+	
+	.menu a {
+		text-decoration: none;
+		font-size: 20pt;
+		color: black;
+		margin-bottom: 10px;
+		display: block;
+		font-family: 'Franklin Gothic heavy', Arial, sans-serif;
+	}
+	
+	.menu a:hover {
+		color: #0077ff;
+	}
+	
+	.menu-visible {
+		display: block;
+		visibility: visible;
+		transform: translateX(0px);
+		transition: all 0.5s ease-in-out;
+		z-index: 100;
+	}
 	/***MAAK JOUW KEUZE****/
 
 	.title {
@@ -67,59 +119,7 @@ body {
 		margin-top: -40px;
 		
 	}
-
-	/***************************Hamburgermenu***********************************/
-	.menu-container {
-		position: relative;
-		z-index: 100;
-	}
-
-	.menu-icon {
-		position: absolute;
-		width: 70px;
-		margin-top: -20px;
-		margin-right: 50px;
-		top: 0;
-		right: 0;
-		cursor: pointer;
-		z-index: 100;
-	}
-
-	.menu {
-		display: none;
-		position: absolute;
-		top: 50px;
-		right: 0;
-		background-color: white;
-		padding: 10px;
-		margin-right: 50px;
-		box-shadow: 0px 0px 10px #ccc;
-		border-radius: 5px;
-		transform: translateX(200%);
-		transition: all 0.5s ease-in-out;
-		visibility: hidden;
-		z-index: 100;
-	}
-
-	.menu a {
-		text-decoration: none;
-		font-size: 24pt;
-		color: black;
-		margin-bottom: 10px;
-		display: block;
-	}
-
-	.menu a:hover {
-		color: #0077ff;
-	}
-
-	.menu-visible {
-		display: block;
-		visibility: visible;
-		transform: translateX(0px);
-		transition: all 0.5s ease-in-out;
-		z-index: 100;
-	}
+	
 	/**************************************Footer*************************************/
 	footer {
 		background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
