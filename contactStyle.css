@@ -67,8 +67,7 @@ nav {
 	background-color: black;
 	border-color: white;
 	padding: 15px;
-	transform: rotate(-5deg);
-	/*roteert niet */
+	transform: rotate(-5deg); /*roteert niet */
 }
 
 .deelnemen {
@@ -104,7 +103,6 @@ nav {
 	justify-content: space-around;
 	margin-top: 50px;
 }
-
 /*anubis*/
 .anubis {
 	width: 300px;
@@ -150,11 +148,9 @@ label {
 	height: 130px;
 	border-radius: 25px;
 }
-
 .t-input::placeholder {
 	color: #1e64c8;
 }
-
 .t-input:focus {
 	outline: none !important;
 	border: 2px solid #db7caa;
