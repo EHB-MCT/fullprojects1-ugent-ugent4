@@ -1,3 +1,11 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
 window.onload = function() {
     let button = document.getElementById('sended');
     button.addEventListener('click', function() {
@@ -36,4 +44,3 @@ window.onload = function() {
 // actualBtn.addEventListener('change', function(){
 //     fileChosen.textContent = this.files[0].name
 // });
-
