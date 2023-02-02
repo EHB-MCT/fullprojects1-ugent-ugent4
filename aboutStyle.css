@@ -4,6 +4,14 @@ html {
     overflow: auto;
 }
 
+h1,
+h2,
+h3,
+span,
+a {
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif
+}
+
 
 @media (max-width: 480px){
     body {
@@ -385,12 +393,12 @@ html {
          max-height: 0px;
          overflow: hidden;
          transition: max-height .25s ease-in-out;
-         margin-bottom: 100px;
+         margin-bottom: 150px;
 
       } 
      
      .toggle4:checked + .lbl-toggle4 + .collapsible-content4{ 
-         max-height: 350px;
+         max-height: 400px;
       } 
       
      .toggle4:checked+.lbl-toggle4 {
@@ -408,7 +416,7 @@ html {
          padding: 1rem 1rem;
          margin: 0 23px;
          margin-top: -10px;
-         margin-bottom: 100px;
+         margin-bottom: 150px;
 
          } 
          
