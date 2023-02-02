@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-image: url("rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
+	background-image: url("rescources/index_mobile/background_graffiti.svg"), url("rescources/index_mobile/background-paper-mobile.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -239,6 +239,7 @@ body {
 		text-decoration: none;
 		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
 		color: #ffd200;
+		margin-bottom: 10px;
 	}
 
 	.menu-menu a.about:hover {
