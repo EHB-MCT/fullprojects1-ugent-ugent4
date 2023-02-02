@@ -203,6 +203,7 @@ footer p {
 		background-image: url("rescources/index_mobile/background_graffiti.svg"), url("rescources/index_mobile/background-paper-mobile.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
 
 	.logo {
