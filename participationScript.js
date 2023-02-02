@@ -7,6 +7,15 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
+
+const activePage = window.location.pathname;
+const navLink2 = document.querySelectorAll('.nav-item .nav-button-2').forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+  }
+})
+
+
 // Hide hamburger-menu on scroll
 //var prevScrollpos = window.pageYOffset;
 //window.onscroll = function() {
@@ -18,6 +27,7 @@ hamburger.addEventListener("click", () => {
   //}
   //prevScrollpos = currentScrollPos;
 //}
+
 
 window.onload = function() {
     let button = document.getElementById('sended');
