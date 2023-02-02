@@ -4,12 +4,13 @@ html {
     overflow: auto;
 }
 
+
 @media (max-width: 480px){
     body {
         margin: 0px;
         overflow: auto;
         background-image:url("rescources/assets-about/Dots_3.png"),url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"),url("rescources/assets-about/Graffiti_1-3.png"),url("rescources/assets-about/dots-bottom-left.svg"),url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size:45%, 150% , 50%, 90%, 200%, 100%;
+        background-size:45%, 150% , 42%, 90%, 200%, 100%;
         background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
         overflow-x: hidden;
         background-position:90px 40px ,top right,bottom right, bottom right, bottom left, center;
@@ -384,6 +385,8 @@ html {
          max-height: 0px;
          overflow: hidden;
          transition: max-height .25s ease-in-out;
+         margin-bottom: 100px;
+
       } 
      
      .toggle4:checked + .lbl-toggle4 + .collapsible-content4{ 
@@ -405,7 +408,8 @@ html {
          padding: 1rem 1rem;
          margin: 0 23px;
          margin-top: -10px;
-    
+         margin-bottom: 100px;
+
          } 
          
      .collapsible-content4 p { 
@@ -472,7 +476,7 @@ html {
         margin: 0px;
         overflow: auto;
         background-image:url("rescources/assets-about/Dots_3.png"),url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"),url("rescources/assets-about/Graffiti_1-3.png"),url("rescources/assets-about/dots-bottom-left.svg"),url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size:210px, 700px , 250px, 410px, 1000px, 100%;
+        background-size:210px, 700px , 200px, 410px, 1000px, 100%;
         background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
         overflow-x: hidden;
         background-position:90px 40px ,top right,bottom right, bottom right, bottom left, center;
@@ -817,6 +821,7 @@ html {
          cursor: pointer;
          border-radius: 50px;
          transition: all 0.25s ease-out;
+         margin-bottom: 100px;
          } 
      
      .lbl-toggle4:hover { 
@@ -853,6 +858,7 @@ html {
      .toggle4:checked+.lbl-toggle4 {
           border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
           background: #d97ca8;
+          margin-bottom: 0;
      } 
      
      .collapsible-content4 .content-inner4 {
@@ -865,6 +871,7 @@ html {
          padding: 1rem 1rem;
          margin: 0 23px;
          margin-top: -10px;
+         margin-bottom: 100px;
     
          } 
          
@@ -931,7 +938,7 @@ html {
         margin: 0px;
         overflow: auto;
         background-image:url("rescources/assets-about/Dots_3.png"),url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"),url("rescources/assets-about/Graffiti_1-3.png"),url("rescources/assets-about/dots-bottom-left.svg"),url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size:250px, 1200px , 280px, 500px, 1050px, 100%;
+        background-size:250px, 1200px , 200px, 500px, 1050px, 100%;
         background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
         overflow-x: hidden;
         background-position:180px 40px ,top right,bottom right, bottom right, bottom left, center;
@@ -1266,6 +1273,7 @@ html {
         padding: 1rem 1rem;
         margin: 0 25px;
         margin-top: -10px;
+        margin-bottom: 100px;
         } 
         
     .collapsible-content3 p { 
@@ -1327,6 +1335,7 @@ html {
      .toggle4:checked+.lbl-toggle4 {
           border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
           background: #d97ca8;
+          margin-bottom: 0;
      } 
      
      .collapsible-content4 .content-inner4 {
@@ -1339,6 +1348,7 @@ html {
          padding: 1rem 1rem;
          margin: 0 25px;
          margin-top: -10px;
+         margin-bottom: 100px;
     
          } 
          
@@ -1404,22 +1414,25 @@ footer {
     background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
     background-size: cover;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
     padding: 20px;
     align-items: center;
+    margin-top: 300px;
     position: fixed;
     bottom: 0;  
-    width: 100%; 
+    width: 100%;
 }
 
 .icon-school img {
     width: 70px;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .icons {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .icons img {
