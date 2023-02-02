@@ -22,7 +22,9 @@ nav {
 	margin: 50px;
 }
 
-
+.menu-container img {
+	display: none;
+}
 
 .menu-menu a {
 	margin-right: 50px;
@@ -194,10 +196,6 @@ footer p {
 	font-size: 13px;
 }
 
-.menu-container img {
-	display: none;
-}
-
 /******************************Mobile:480px********************************************************/
 
 @media (max-width: 480px) {
@@ -212,17 +210,13 @@ footer p {
 		margin: 50px;
 	}
 
-
-
 	/***********************Hamburgermenu***************************/
-	
+
 	.menu-container {
 		position: relative;
 		z-index: 100;
 	}
 
-	
-	
 	.menu-container img {
 		display: block;
 	}
@@ -267,13 +261,14 @@ footer p {
 		text-decoration: none;
 		margin-bottom: 20px;
 		font-size: 15px;
-		padding: 20px;
-		color: white;
+		background-color: white;
+		padding: 0px;
+		color: black;
 		width: 70px;
 		height: 5px;
+		transform: rotate(0deg);
 		display: block;
 		font-family: "Franklin Gothic heavy", Arial, sans-serif;
-		
 	}
 
 	.menu-menu a.deelnemen {
@@ -283,7 +278,6 @@ footer p {
 		height: 5px;
 		display: block;
 		font-family: "Franklin Gothic heavy", Arial, sans-serif;
-		
 	}
 
 	.menu-menu a:hover {
@@ -298,9 +292,6 @@ footer p {
 		z-index: 100;
 	}
 
-	
-
-	
 	/*vragen / opmerkingen*/
 	.title {
 		text-align: center;

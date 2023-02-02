@@ -20,14 +20,20 @@ body {
 
 }
 
+.background-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, minmax(50px, auto));
+}
+
 .grid-wrapper {
     grid-column: 1/13;
-    grid-row: 1/17;
+    grid-row: 1/11;
 
     margin: 0px 20px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, minmax(50px, auto));
+    grid-template-rows: repeat(11, minmax(50px, auto));
 }
 
 @media (min-width: 991px) {
@@ -35,7 +41,7 @@ body {
         margin: 0px auto;
 
         width: 100%;
-        max-width: 920px;
+        max-width: 1200px;
     }
 }
 
@@ -44,11 +50,13 @@ body {
 /* HEADER */
 header {
     grid-column: 1 / 13;
+    grid-row: 1;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 
+    margin: 0px 20px;
     padding-top: 20px;
 
     position: relative;
@@ -86,7 +94,7 @@ li {
     z-index: -1;
 
     top: 30px;
-    right: -170px;
+    right: -200px;
     width: 20%;
 
     text-align: left;
@@ -94,6 +102,21 @@ li {
 
     background-color: rgba(219, 124, 170, .7);
     border-radius: 20px;
+}
+
+.nav-menu.active {
+    top: 30px;
+    width: 80%;
+    right: -40px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(2, 30px);
+    grid-row-gap: 0px;
+
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 a {
@@ -165,21 +188,6 @@ a {
     background-color: #000;
 }
 
-.nav-menu.active {
-    top: 30px;
-    width: 80%;
-    right: -40px;
-
-    display: grid;
-    grid-template-columns: repeat(7, 50px);
-    grid-template-rows: repeat(2, 30px);
-    grid-row-gap: 0px;
-
-    align-items: center;
-
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
 .hamburger {
     display: block;
     cursor: pointer;
@@ -200,6 +208,8 @@ a {
 @media (min-width: 991px) {
     header {
         grid-template-rows: repeat(1, auto);
+
+        margin: 0px 50px;
     }
 
     .hamburger {
@@ -258,15 +268,19 @@ a {
 /* ARTWORK */
 .artwork {
     grid-column: 1/13;
-    grid-row: 4/10;
-
-    margin: 0px -20px;
+    grid-row: 2/11;
 
     background-image: url("rescources/participation/bouddha_phone2.png"), url("rescources/participation/Doodle_2.png"), url("rescources/participation/Post-it_1.png"), url("rescources/participation/Dots-blue_1.png"), url("rescources/participation/Dots-left_2.png"), url("rescources/participation/Graffiti_1-3.png");
     background-size: 220px, 140px, 200px, 280px, 270px, 315px;
     background-repeat: no-repeat;
     background-position: bottom left +10px, top -2px left +2px, bottom right, bottom left, bottom right, bottom right;
+}
 
+@media (min-width: 991px) {
+    .artwork {
+        background-size: 450px, 250px, 250px, 650px, 650px, 800px;
+        background-position: bottom left +20px, bottom +450px left +40px, bottom +50px right +200px, bottom left, bottom right, bottom right;
+    }
 }
 
 
@@ -274,7 +288,7 @@ a {
 /* FORM */
 .title {
     grid-column: 1/12;
-    grid-row: 2/3;
+    grid-row: 3/4;
 
     margin-left: 40px;
     margin-top: 10px;
@@ -288,7 +302,7 @@ a {
 }
 
 .title-image {
-    transform: rotate(-4deg);
+    transform: rotate(-5deg);
     margin-left: -10px;
     margin-top: -50px;
 
@@ -303,7 +317,7 @@ a {
     font-weight: 800;
     text-align: center;
 
-    transform: rotate(-4deg);
+    transform: rotate(-5deg);
 
     margin-top: 30px;
 
@@ -312,7 +326,7 @@ a {
 
 @media (min-width: 991px) {
     .title {
-        margin-left: 10px;
+        margin-left: 0px;
     }
 }
 
@@ -320,7 +334,7 @@ a {
 /* Form box */
 .form-box {
     grid-column: 1/13;
-    grid-row: 3/4;
+    grid-row: 4/5;
     background-color: #000;
     border-radius: 50px;
     opacity: 0.1;
@@ -330,7 +344,7 @@ a {
 
 .form-grid {
     grid-column: 1/13;
-    grid-row: 3/4;
+    grid-row: 4/5;
 
     display: grid;
     grid-template-columns: auto;
@@ -391,7 +405,7 @@ a {
         height: fit-content;
     }
 }
-}
+
 
 /* Textboxes */
 label {
@@ -680,7 +694,9 @@ input {
 /* FOOTER */
 footer {
     grid-column: 1/13;
-    grid-row: 10/11;
+    grid-row: 11/12;
+
+    margin: 0px 20px;
     /*
     background-image: url(rescources/participation/Footer_background.svg);
     */
