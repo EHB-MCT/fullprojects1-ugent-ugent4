@@ -394,6 +394,10 @@ footer p {
         flex-direction: row;
     }
 
+    #balls div {
+        z-index: 2;
+    }
+
     #dottedMountain {
         width: 700px;
         z-index: -1;
@@ -429,12 +433,13 @@ footer p {
 
     #wereld {
         width: 370px;
-        top: 50%;
+        top: 55%;
+        z-index: 1;
     }
 
     #beker {
         width: 370px;
-        top: 50%;
+        top: 60%;
     }
 
     #doodle1 {
@@ -454,7 +459,7 @@ footer p {
 @media (min-width: 1500px) {
     #wereld {
         width: 530px;
-        top: 70%;
+        top: 80%;
     }
 
     #dottedMountain {
@@ -465,7 +470,7 @@ footer p {
 
     #beker {
         width: 770px;
-        top: 90%;
+        top: 105%;
     }
 
     #doodle1 {
