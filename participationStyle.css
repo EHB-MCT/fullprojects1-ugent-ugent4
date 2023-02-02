@@ -41,6 +41,10 @@ body {
         background-size: 8%, 20%, 100%;
     }
 
+    .background-grid {
+        grid-template-rows: repeat(11, minmax(50px, auto));
+    }
+
     .grid-wrapper {
         margin: 0px auto;
 
@@ -269,10 +273,11 @@ a {
 @media (min-width: 991px) {
     header {
         margin: 0px 50px;
+        margin-top: -50px;
     }
 
     .logo-link img {
-        height: 85px;
+        height: 85px
     }
 }
 
@@ -282,20 +287,23 @@ a {
 /* ARTWORK */
 .artwork {
     grid-column: 1/13;
-    grid-row: 3/10;
+    grid-row: 3/11;
 
     background-image: url("rescources/participation/bouddha_phone2.png"), url("rescources/participation/Doodle_2.png"), url("rescources/participation/Post-it_1.png"), url("rescources/participation/Dots-blue_1.png"), url("rescources/participation/Dots-left_2.png"), url("rescources/participation/Graffiti_1-3.png");
     background-size: 220px, 140px, 200px, 280px, 270px, 315px;
     background-repeat: no-repeat;
     background-position: bottom left +10px, top +45px left +4px, bottom right, bottom left, bottom right, bottom right;
+
+    z-index: 0;
 }
 
 @media (min-width: 991px) {
     .artwork {
-        grid-row: 3/10;
+        grid-row: 2/11;
 
-        background-size: 450px, 250px, 250px, 650px, 650px, 800px;
-        background-position: bottom left +20px, bottom +450px left +40px, bottom +50px right +200px, bottom left, bottom right, bottom right;
+        background-size: 30%, 15%, 250px, 41%, 41%, 50%;
+        background-position: bottom left +40px, bottom +550px left +3%, bottom +50px right +200px, bottom left, bottom right, bottom right;
+
     }
 }
 
@@ -348,16 +356,6 @@ a {
 
 
 /* Form box */
-.form-box {
-    grid-column: 1/13;
-    grid-row: 4/5;
-    background-color: #000;
-    border-radius: 50px;
-    opacity: 0.1;
-
-    z-index: -1;
-}
-
 .form-grid {
     grid-column: 1/13;
     grid-row: 4/5;
@@ -367,7 +365,8 @@ a {
     grid-template-rows: repeat(3, minmax(50px, auto));
     grid-row-gap: 60px;
 
-    margin: 0px 35px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 50px;
 }
 
 /* Form content grid */
@@ -377,6 +376,8 @@ a {
     grid-template-rows: repeat(3, minmax(50px, auto));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
+    margin: 0px 35px;
 }
 
 .school-grid {
@@ -399,7 +400,14 @@ a {
         grid-column-gap: 60px;
     }
 
+    .content-grid {
+        margin: 0px 0px;
+    }
+
     .school-grid {
+        margin-top: 125px;
+        margin-left: 35px;
+
         grid-row: 1;
         grid-column: 1;
 
@@ -407,6 +415,8 @@ a {
     }
 
     .teacher-grid {
+        margin-left: 35px;
+
         grid-row: 2;
         grid-column: 1;
 
@@ -414,6 +424,7 @@ a {
     }
 
     .participation-grid {
+        margin-right: 35px;
         margin-top: 125px;
         grid-row: 1/5;
         grid-column: 2;
@@ -580,7 +591,7 @@ input {
 
 .text {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -594,18 +605,32 @@ input {
     margin-top: 30px;
 }
 
-.box-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.yes-box {
+    top: 63%;
+    left: 20%;
+}
+
+.maybe-box {
+    top: 75%;
+    left: 40%;
+}
+
+.no-box {
+    top: 63%;
+    left: 53%;
+}
+
+.box-content {
+    font-size: 14px;
 
     margin: 0px;
-    margin-top: 50px;
+    position: absolute;
+
+    cursor: pointer;
 }
 
 /* Hide the browser's default checkbox */
-.box-container input {
+.box-content input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -615,25 +640,44 @@ input {
 
 /* Create a custom checkbox */
 .checkmark {
-    margin-left: -18px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 35px;
-    width: 35px;
-    background-color: #FFD200;
+    padding: 5px 10px;
+
+    color: #000;
     border: 2px solid #000;
-    border-radius: 4px;
+    border-radius: 5px;
+}
+
+.yes-txt {
+    background-color: #ADE25D;
+}
+
+.maybe-txt {
+    background-color: #F7B267;
+}
+
+.no-txt {
+    background-color: #DB324D;
 }
 
 /* On mouse-over, add a grey background color */
-.box-container:hover input~.checkmark {
-    background-color: #FFD200;
+.yes-box:hover input~.checkmark {
+    background-color: #ADE25D;
 }
 
 /* When the checkbox is checked, add a blue background */
-.box-container input:checked~.checkmark {
+.yes-box input:checked~.checkmark {
     background-color: #000;
+    color: #ADE25D;
+}
+
+.maybe-box input:checked~.checkmark {
+    background-color: #000;
+    color: #F7B267;
+}
+
+.no-box input:checked~.checkmark {
+    background-color: #000;
+    color: #C1292E;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -643,45 +687,11 @@ input {
     display: none;
 }
 
-/* Show the checkmark when checked */
-.box-container input:checked~.checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.box-container .checkmark:after {
-    left: 10.5px;
-    top: 3.5px;
-    width: 9px;
-    height: 18px;
-    border: solid #FFD200;
-    border-width: 0 6px 6px 0;
-    border-radius: 3px;
-    transform: rotate(35deg);
-}
-
 /* Send button */
 .verzenden {
     grid-column: 1/5;
 
     margin: 20px 12% 30px 12%;
-}
-
-.hide {
-    margin-left: 12px;
-    margin-right: -12px;
-    margin-top: -30px;
-    margin-bottom: 30px;
-
-    display: none;
-}
-
-.submit-button:hover~.hide {
-    display: block;
-}
-
-.verzenden:hover {
-    margin-bottom: -14px;
 }
 
 .submit-button {
@@ -703,6 +713,7 @@ input {
 
 .submit-button:hover {
     background-color: #7F4C63;
+    border: 2px solid #FFD200;
 }
 
 
@@ -710,7 +721,7 @@ input {
 /* FOOTER */
 footer {
     grid-column: 1/13;
-    grid-row: 10/11;
+    grid-row: 11/12;
 
     margin: 0px 20px;
     /*

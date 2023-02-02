@@ -64,9 +64,6 @@
                 </div>
             </div>
 
-            <!-- Gray bg box -->
-            <div class="form-box"></div>
-
             <div class="form-grid">
 
                 <!-- School info -->
@@ -155,21 +152,28 @@
                         <img src="rescources/participation/Olympiade-checkbox-shape.svg" alt="6-sided box">
 
                         <div class="text">Ook graag meedoen aan de Geschiedenis Olympiade 2024?</div>
-                        <div class="text t-small">Vink hieronder aan!</div>
+                        <div class="text t-small">Duid hieronder aan!</div>
 
-                        <label class="box-container">
-                            <input type="checkbox" class="checkbox">
-                            <span class="checkmark"></span>
+                        <label class="yes-box box-content">
+                            <input type="radio" class="checkbox" name="radio">
+                            <span class="yes-txt checkmark">Ik doe mee!</span>
                         </label>
+
+                        <label class="maybe-box box-content">
+                            <input type="radio" class="checkbox" name="radio">
+                            <span class="maybe-txt checkmark">Misschien</span>
+                        </label>
+
+                        <label class="no-box box-content">
+                            <input type="radio" class="checkbox" name="radio">
+                            <span class="no-txt checkmark">Ik doe niet mee</span>
+                        </label>
+
                     </div>
 
                     <div class="verzenden">
                         <label for="verzenden"></label>
                         <input id="sended" type="submit" class="submit-button" value="Verzenden!">
-
-                        <div class="hide">
-                            <img src="rescources/participation/Button-submit-hover.svg" alt="">
-                        </div>
                     </div>
 
                 </div>
