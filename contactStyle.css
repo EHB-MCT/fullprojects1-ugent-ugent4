@@ -1,200 +1,201 @@
 /**Desktop: 1280px**/
-body {
-	margin: 0;
-}
+	body {
+		margin: 0;
+	}
 
-.wrapper {
-	background-image: url("rescources/assets-contact-desktop-version/Asset\ 23.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0;
-}
+	.wrapper {
+		background-image: url("rescources/assets-contact-desktop-version/Asset\ 23.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0;
+	}
 
-/**header**/
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+	/**header**/
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-.logo {
-	width: 100px;
-	margin: 50px;
-}
+	.logo {
+		width: 100px;
+		margin: 50px;
+	}
 
-.menu-container img {
-	display: none;
-}
+	.menu-container img {
+		display: none;
+	}
 
-.menu-menu a {
-	margin-right: 50px;
-	margin-right: 30px;
-	font-size: 17px;
-}
+	.menu-menu a {
+		margin-right: 50px;
+		margin-right: 30px;
+		font-size: 17px;
+	}
 
-.menu-menu a.about {
-	text-decoration: none;
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: black;
-}
+	.menu-menu a.about {
+		text-decoration: none;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: black;
+	}
 
-.menu-menu a.contact {
-	display: inline-block;
-	padding: 15px;
-	text-decoration: none;
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: white;
-	background-color: #000;
-}
+	.menu-menu a.contact {
+		display: inline-block;
+		padding: 15px;
+		text-decoration: none;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: white;
+		background-color: #000;
+	}
 
-.menu-menu a.deelnemen {
-	text-decoration: none;
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: #db7caa;
-}
+	.menu-menu a.deelnemen {
+		text-decoration: none;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: #db7caa;
+	}
 
-.menu-menu a.about:hover {
-	display: inline-block;
-	background-color: black;
-	border-color: black;
-	transform: rotate(5deg);
-	transform: rotate(-15deg);
-	transition-duration: 300ms;
-	padding: 15px;
-	color: white;
-}
+	.menu-menu a.about:hover {
+		display: inline-block;
+		background-color: black;
+		border-color: black;
+		transform: rotate(5deg);
+		transform: rotate(-15deg);
+		transition-duration: 300ms;
+		padding: 15px;
+		color: white;
+	}
 
-.menu-menu a.contact {
-	display: inline-block;
-	background-color: black;
-	border-color: white;
-	padding: 15px;
-	transform: rotate(-5deg);
-}
+	.menu-menu a.contact {
+		display: inline-block;
+		background-color: black;
+		border-color: white;
+		padding: 15px;
+		transform: rotate(-5deg);
+	}
 
-.deelnemen {
-	background-color: #ffd200;
-	padding: 25px;
-	border-radius: 25px;
-}
+	.deelnemen {
+		background-color: #ffd200;
+		padding: 25px;
+		border-radius: 25px;
+	}
 
-.menu-menu a.deelnemen:hover {
-	background-color: black;
-	color: #ffd200;
-	transition-duration: 300ms;
-}
+	.menu-menu a.deelnemen:hover {
+		background-color: black;
+		color: #ffd200;
+		transition-duration: 300ms;
+	}
 
-/***********************vragen*************/
-.title {
-	background-color: black;
-	margin-left: 150px;
-	width: 500px;
-	color: white;
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	padding: 5px;
-	transform: rotate(-5deg);
-}
+	/***********************vragen*************/
+	.title {
+		background-color: black;
+		margin-left: 150px;
+		width: 500px;
+		color: white;
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		padding: 5px;
+		transform: rotate(-5deg);
+	}
 
-.title h1 {
-	margin-left: 25px;
-}
+	.title h1 {
+		margin-left: 25px;
+	}
 
-/**invulformilier-anubis**/
-.formulier {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 50px;
-}
-/*anubis*/
-.anubis {
-	width: 300px;
-	margin-top: 100px;
-	margin-bottom: -30px;
-	margin-left: 20px;
-}
+	/**invulformilier-anubis**/
+	.formulier {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 50px;
+	}
+	/*anubis*/
+	.anubis {
+		width: 300px;
+		margin-top: 100px;
+		margin-bottom: -30px;
+		margin-left: 20px;
+	}
 
-.input {
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	margin-right: 100px;
-}
+	.input {
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		margin-right: 100px;
+	}
 
-label {
-	color: #1e64c8;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 800;
-	margin-top: 20px;
-	margin-left: 5px;
-	display: block;
-}
+	label {
+		color: #1e64c8;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 800;
+		margin-top: 20px;
+		margin-left: 5px;
+		display: block;
+	}
 
-.text-field {
-	font-size: 13px;
-	padding: 10px;
-	border: 2px solid #000;
-	border-radius: 50px;
-	display: block;
-}
+	.text-field {
+		font-size: 13px;
+		padding: 10px;
+		border: 2px solid #000;
+		border-radius: 50px;
+		display: block;
+	}
 
-.t-input {
-	color: #1e64c8;
-	background-color: #fff;
-	opacity: 0.6;
-	width: 400px;
-	height: 38px;
-	display: block;
-	box-sizing: border-box;
-}
+	.t-input {
+		color: #1e64c8;
+		background-color: #fff;
+		opacity: 0.6;
+		width: 400px;
+		height: 38px;
+		display: block;
+		box-sizing: border-box;
+	}
 
-.text-field.text-input-long {
-	height: 130px;
-	border-radius: 25px;
-}
-.t-input::placeholder {
-	color: #1e64c8;
-}
-.t-input:focus {
-	outline: none !important;
-	border: 2px solid #db7caa;
-}
+	.text-field.text-input-long {
+		height: 130px;
+		border-radius: 25px;
+	}
+	.t-input::placeholder {
+		color: #1e64c8;
+	}
+	.t-input:focus {
+		outline: none !important;
+		border: 2px solid #db7caa;
+	}
 
-#submit-button {
-	width: 150px;
-	margin-top: 20px;
-	margin-left: 240px;
-}
+	#submit-button {
+		width: 150px;
+		margin-top: 20px;
+		margin-left: 240px;
+	}
 
-/**Footer**/
-footer {
-	background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	justify-content: space-around;
-	padding: 20px;
-	align-items: center;
-}
+	/**Footer**/
+	footer {
+		background-image: url("rescources/assets-contact-mobile-version/background\ paper.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: space-around;
+		padding: 20px;
+		align-items: center;
+	}
 
-.icon-school img {
-	width: 70px;
-	margin-right: 30px;
-}
+	.icon-school img {
+		width: 70px;
+		margin-right: 30px;
+	}
 
-.icons img {
-	width: 40px;
-	margin-right: 30px;
-}
+	.icons img {
+		width: 40px;
+		margin-right: 30px;
+	}
 
-#flw img {
-	width: 120px;
-	margin-bottom: 10px;
-}
+	#flw img {
+		width: 120px;
+		margin-bottom: 10px;
+	}
 
-footer p {
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: #1e64c8;
-	font-size: 13px;
-}
+	footer p {
+		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+		color: #1e64c8;
+		font-size: 13px;
+	}
+
 
 /******************************Mobile:480px********************************************************/
 
@@ -203,6 +204,7 @@ footer p {
 		background-image: url("rescources/index_mobile/background_graffiti.svg"), url("rescources/index_mobile/background-paper-mobile.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
 
 	.logo {

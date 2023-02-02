@@ -11,6 +11,10 @@ body {
 		margin: 50px;
 	}
 
+	.wrapper {
+		overflow: hidden;
+	}
+
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -19,12 +23,9 @@ body {
 	/***********************Hamburgermenu***************************/
 
 	.menu-container {
+		display: block;
 		position: relative;
 		z-index: 100;
-	}
-
-	.menu-container img {
-		display: block;
 	}
 
 	.menu-icon {
@@ -208,6 +209,10 @@ body {
 @media (min-width: 750px) {
 	body {
 		margin: 0;
+	}
+
+	.menu-container {
+		display: block;
 	}
 
 	.menu-menu a {
