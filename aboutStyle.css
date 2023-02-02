@@ -229,6 +229,7 @@ a {
 @media (min-width: 991px) {
     header {
         margin: 0px 50px;
+        margin-top: -50px;
     }
 
     .logo-link img {
@@ -236,7 +237,13 @@ a {
     }
 }
 
-
+/*code collapsible copied and addapted from // Tutorial //
+Implementing A Pure CSS Collapsible
+Published on May 2, 2020
+CSS
+Default avatar
+By Alligator.io
+Developer and author at DigitalOcean.*/ 
 
 @media (max-width: 480px){
     body {
