@@ -221,7 +221,7 @@ main {
 }
 
 #dottedMountain {
-    width: 400px;
+    width: 300px;
     position: absolute;
     bottom: -0%;
     left: 0;
@@ -382,11 +382,21 @@ footer p {
     #doe-mee {
         width: 300px;
     }
+
+    #dottedMountain {
+        width: 550px;
+        z-index: -1;
+    }
 }
 
 @media (min-width: 750px) {
     #balls {
         flex-direction: row;
+    }
+
+    #dottedMountain {
+        width: 700px;
+        z-index: -1;
     }
 
     #missionBall img,
@@ -415,5 +425,58 @@ footer p {
 
     #deelnemen-post-it {
         max-width: 400px;
+    }
+
+    #wereld {
+        width: 370px;
+        top: 50%;
+    }
+
+    #beker {
+        width: 370px;
+        top: 50%;
+    }
+
+    #doodle1 {
+        width: 250px;
+        top: 60%;
+        left: 10%;
+    }
+
+    #doodle2 {
+        width: 450px;
+        top: 35%;
+        right: 5%;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    #wereld {
+        width: 530px;
+        top: 70%;
+    }
+
+    #dottedMountain {
+        width: 1000px;
+        bottom: -10%;
+        z-index: -1;
+    }
+
+    #beker {
+        width: 770px;
+        top: 90%;
+    }
+
+    #doodle1 {
+        width: 450px;
+        top: 80%;
+        left: 20%;
+    }
+
+    #doodle2 {
+        width: 650px;
+        top: 35%;
+        right: 5%;
     }
 }
