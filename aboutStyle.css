@@ -13,7 +13,7 @@ html {
         background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
         overflow-x: hidden;
         background-position:90px 40px ,top right,bottom right, bottom right, bottom left, center;
-        min-height: 100vh
+        min-height: calc(100vh - 100px);
         
 
 
@@ -476,7 +476,7 @@ html {
         background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
         overflow-x: hidden;
         background-position:90px 40px ,top right,bottom right, bottom right, bottom left, center;
-        min-height: 100vh;
+        min-height: calc(100vh - 100px);
 
 
     }
@@ -935,7 +935,7 @@ html {
         background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
         overflow-x: hidden;
         background-position:180px 40px ,top right,bottom right, bottom right, bottom left, center;
-        min-height: 100vh;
+        min-height: calc(100vh - 100px);
 
 
     }
@@ -1407,8 +1407,9 @@ footer {
     justify-content: space-around;
     padding: 20px;
     align-items: center;
-    position: relative;
-   
+    position: fixed;
+    bottom: 0;  
+    width: 100%; 
 }
 
 .icon-school img {
@@ -1441,6 +1442,7 @@ footer p {
 @media (min-width: 580px) {
     footer p {
         display: flex
+        
     }
 
     #doe-mee {
