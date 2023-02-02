@@ -12,6 +12,231 @@ a {
     font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif
 }
 
+header {
+    grid-column: 1/13;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    margin: 0px 20px;
+    padding-top: 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.logo-link {
+    grid-column: 1 / 2;
+
+    align-self: center;
+    justify-self: start;
+
+    text-decoration: none;
+}
+
+.logo-link img {
+    height: 75px;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-menu {
+    grid-row: 1;
+
+    top: 25px;
+    right: -350px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(2, 35px);
+    grid-row-gap: 0px;
+
+    align-items: center;
+
+    position: fixed;
+    z-index: -1;
+
+    text-align: left;
+    transition: 0.3s;
+
+    background-color: rgba(219, 124, 170, .7);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.nav-menu.active {
+    top: 25px;
+    width: 70%;
+    right: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(8, minmax(40px, auto));
+    grid-template-rows: repeat(2, 35px);
+    grid-row-gap: 0px;
+
+    align-self: center;
+    position: fixed;
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.nav-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.home {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.contact {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.about {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.participation {
+    grid-column: 4/5;
+    grid-row: 2;
+}
+
+.nav-button {
+    margin: 0px 10px;
+    padding: 4px 8px;
+
+    transition: all.25s ease;
+    cursor: pointer;
+
+    display: inline-block;
+}
+
+.nav-button:hover {
+    color: #fff;
+    background-color: #000;
+    transform: rotate(-8deg);
+}
+
+.nav-button-2 {
+    color: #FFD200;
+    background-color: #DB7CAA;
+    border-radius: 10px;
+    padding: 4px 8px;
+
+    margin: 0px 15px;
+
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.nav-button-2:hover,
+.active {
+    color: #FFD200;
+    background-color: #000;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+
+    grid-column: 4/5;
+    align-self: center;
+}
+
+.hamburger img {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 50px;
+
+    background-color: #fff;
+}
+
+@media (min-width: 767px) {
+    header {
+        grid-template-rows: repeat(1, auto);
+
+        margin: 0px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        grid-column: 3/4;
+
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+
+        width: 100%;
+        text-align: right;
+        right: 0px;
+
+        position: unset;
+
+        background-color: transparent;
+    }
+
+    a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .home {
+        grid-column: 1;
+    }
+
+    .about {
+        grid-column: 2;
+    }
+
+    .contact {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .participation {
+        grid-column: 4/6;
+        grid-row: 1;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 991px) {
+    header {
+        margin: 0px 50px;
+    }
+
+    .logo-link img {
+        height: 85px;
+    }
+}
+
+
 
 @media (max-width: 480px){
     body {
@@ -28,84 +253,7 @@ a {
 
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        /* center the logo and nav vertically */
-        justify-content: space-between;
-        /* align the logo to the left and nav to the right */
-        padding: 10px;
-        width: calc(100% - 20px);
-        top: -20px;
-    }
-    
-    .logo {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    
-    .logo img {
-        height: 75px;
-    }
-    
-    .square-button,
-    .big-square-button {
-        min-width: 100px;
-        min-height: 50px;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        background-color: transparent;
-        border-color: transparent;
-    }
-    
-    .square-button span,
-    .big-square-button span {
-        display: inline-block;
-        font-weight: bold;
-    }
-    
-    .square-button:hover,
-    .big-square-button:hover {
-        background-color: black;
-        border-color: black;
-        color: white;
-        transform: rotate(5deg);
-        transform: rotate(-15deg);
-        transition-duration: 300ms;
-    }
-    
-    .big-square-button {
-        min-width: 120px;
-        /* adjust as needed */
-        min-height: 70px;
-        /* adjust as needed */
-        font-size: 27pt;
-    }
-    
-    .square-button {
-        font-size: 16pt;
-    }
-    
-    nav {
-        align-items: center;
-        /* center the links vertically */
-        justify-content: flex-end;
-        /* align the links to the right */
-        flex: 1 1 auto;
-        /* allow the nav to fill the remaining space */
-        display: flex;
-        width: 100%;
-        z-index: 1;
-    }
-    
-    nav button {
-        margin-right: 20px;
-        padding: 5px 10px;
-        /* add some space between the words */
-    }
-    
+
    
     
     main {
@@ -493,83 +641,7 @@ a {
 
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        /* center the logo and nav vertically */
-        justify-content: space-between;
-        /* align the logo to the left and nav to the right */
-        padding: 10px;
-        width: calc(100% - 20px);
-        top: -20px;
-    }
-    
-    .logo {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    
-    .logo img {
-        height: 75px;
-    }
-    
-    .square-button,
-    .big-square-button {
-        min-width: 100px;
-        min-height: 50px;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        background-color: transparent;
-        border-color: transparent;
-    }
-    
-    .square-button span,
-    .big-square-button span {
-        display: inline-block;
-        font-weight: bold;
-    }
-    
-    .square-button:hover,
-    .big-square-button:hover {
-        background-color: black;
-        border-color: black;
-        color: white;
-        transform: rotate(5deg);
-        transform: rotate(-15deg);
-        transition-duration: 300ms;
-    }
-    
-    .big-square-button {
-        min-width: 120px;
-        /* adjust as needed */
-        min-height: 70px;
-        /* adjust as needed */
-        font-size: 27pt;
-    }
-    
-    .square-button {
-        font-size: 16pt;
-    }
-    
-    nav {
-        align-items: center;
-        /* center the links vertically */
-        justify-content: flex-end;
-        /* align the links to the right */
-        flex: 1 1 auto;
-        /* allow the nav to fill the remaining space */
-        display: flex;
-        width: 100%;
-        z-index: 1;
-    }
-    
-    nav button {
-        margin-right: 20px;
-        padding: 5px 10px;
-        /* add some space between the words */
-    }
+   
     
     
     main {
@@ -955,83 +1027,7 @@ a {
 
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        /* center the logo and nav vertically */
-        justify-content: space-between;
-        /* align the logo to the left and nav to the right */
-        padding: 10px;
-        width: calc(100% - 20px);
-        top: -20px;
-    }
-    
-    .logo {
-        margin-top: -20px;
-        margin-left: 25px;
-    }
-    
-    .logo img {
-        height: 75px;
-    }
-    
-    .square-button,
-    .big-square-button {
-        min-width: 100px;
-        min-height: 50px;
-        color: black;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        background-color: transparent;
-        border-color: transparent;
-    }
-    
-    .square-button span,
-    .big-square-button span {
-        display: inline-block;
-        font-weight: bold;
-    }
-    
-    .square-button:hover,
-    .big-square-button:hover {
-        background-color: black;
-        border-color: black;
-        color: white;
-        transform: rotate(5deg);
-        transform: rotate(-15deg);
-        transition-duration: 300ms;
-    }
-    
-    .big-square-button {
-        min-width: 120px;
-        /* adjust as needed */
-        min-height: 70px;
-        /* adjust as needed */
-        font-size: 27pt;
-    }
-    
-    .square-button {
-        font-size: 16pt;
-    }
-    
-    nav {
-        align-items: center;
-        /* center the links vertically */
-        justify-content: flex-end;
-        /* align the links to the right */
-        flex: 1 1 auto;
-        /* allow the nav to fill the remaining space */
-        display: flex;
-        width: 100%;
-        z-index: 1;
-    }
-    
-    nav button {
-        margin-right: 20px;
-        padding: 5px 10px;
-        /* add some space between the words */
-    }
+   
     
     
     main {
