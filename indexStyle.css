@@ -6,12 +6,21 @@ html {
 body {
     width: 100%;
     height: 100%;
+    font-family: "franklin-gothic-atf", sans-serif;
     margin: 0;
     overflow: auto;
-    background-image: url("/rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("rescources/index_mobile/background_graffiti.svg"), url("rescources/participation/background paper.svg");
+    background-size: cover, 100%;
+    background-repeat: no-repeat, repeat;
     overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+span,
+a {
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif
 }
 
 header {
@@ -212,7 +221,7 @@ main {
 }
 
 #dottedMountain {
-    width: 400px;
+    width: 300px;
     position: absolute;
     bottom: -0%;
     left: 0;
@@ -373,11 +382,25 @@ footer p {
     #doe-mee {
         width: 300px;
     }
+
+    #dottedMountain {
+        width: 550px;
+        z-index: -1;
+    }
 }
 
 @media (min-width: 750px) {
     #balls {
         flex-direction: row;
+    }
+
+    #balls div {
+        z-index: 2;
+    }
+
+    #dottedMountain {
+        width: 700px;
+        z-index: -1;
     }
 
     #missionBall img,
@@ -406,5 +429,59 @@ footer p {
 
     #deelnemen-post-it {
         max-width: 400px;
+    }
+
+    #wereld {
+        width: 370px;
+        top: 55%;
+        z-index: 1;
+    }
+
+    #beker {
+        width: 370px;
+        top: 60%;
+    }
+
+    #doodle1 {
+        width: 250px;
+        top: 60%;
+        left: 10%;
+    }
+
+    #doodle2 {
+        width: 450px;
+        top: 35%;
+        right: 5%;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    #wereld {
+        width: 530px;
+        top: 80%;
+    }
+
+    #dottedMountain {
+        width: 1000px;
+        bottom: -10%;
+        z-index: -1;
+    }
+
+    #beker {
+        width: 770px;
+        top: 105%;
+    }
+
+    #doodle1 {
+        width: 450px;
+        top: 80%;
+        left: 20%;
+    }
+
+    #doodle2 {
+        width: 650px;
+        top: 35%;
+        right: 5%;
     }
 }

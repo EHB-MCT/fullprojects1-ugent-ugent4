@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-image: url("rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
+	background-image: url("rescources/index_mobile/background_graffiti.svg"), url("rescources/index_mobile/background-paper-mobile.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -11,6 +11,10 @@ body {
 		margin: 50px;
 	}
 
+	.wrapper {
+		overflow: hidden;
+	}
+
 	nav {
 		display: flex;
 		justify-content: space-between;
@@ -19,12 +23,9 @@ body {
 	/***********************Hamburgermenu***************************/
 
 	.menu-container {
+		display: block;
 		position: relative;
 		z-index: 100;
-	}
-
-	.menu-container img {
-		display: block;
 	}
 
 	.menu-icon {
@@ -210,6 +211,10 @@ body {
 		margin: 0;
 	}
 
+	.menu-container {
+		display: block;
+	}
+
 	.menu-menu a {
 		margin-right: 50px;
 		margin-right: 30px;
@@ -239,6 +244,7 @@ body {
 		text-decoration: none;
 		font-family: "Franklin Gothic Heavy", Arial, sans-serif;
 		color: #ffd200;
+		margin-bottom: 10px;
 	}
 
 	.menu-menu a.about:hover {

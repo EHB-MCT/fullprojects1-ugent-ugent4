@@ -15,6 +15,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-right: 50px;
 }
 
 .logo {
@@ -27,9 +28,13 @@ nav {
 }
 
 .menu-menu a {
-	margin-right: 50px;
-	margin-right: 30px;
-	font-size: 17px;
+	font-size: 18px;
+	margin: 0px 10px;
+	padding: 4px 8px;
+	margin-right: 20px;
+
+	transition: 0.25s ease;
+	cursor: pointer;
 }
 
 .menu-menu a.about {
@@ -39,37 +44,34 @@ nav {
 }
 
 .menu-menu a.contact {
-	display: inline-block;
-	padding: 15px;
-	text-decoration: none;
+	
 	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: white;
+	text-decoration: none;
+	color: #fff;
 	background-color: #000;
+	transform: rotate(-8deg);
 }
 
 .menu-menu a.deelnemen {
 	text-decoration: none;
 	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: #db7caa;
+	color: #ffd200;
+	background-color: #db7caa;
+	border-radius: 10px;
+	padding: 4px 8px;
 }
 
 .menu-menu a.about:hover {
-	display: inline-block;
-	background-color: black;
-	border-color: black;
-	transform: rotate(5deg);
-	transform: rotate(-15deg);
-	transition-duration: 300ms;
-	padding: 15px;
-	color: white;
+	
+	color: #fff;
+	background-color: #000;
+	transform: rotate(-8deg);
 }
 
 .menu-menu a.contact {
-	display: inline-block;
-	background-color: black;
-	border-color: white;
-	padding: 15px;
-	transform: rotate(-5deg);
+	color: #fff;
+	background-color: #000;
+	transform: rotate(-8deg);
 }
 
 .deelnemen {
@@ -200,9 +202,10 @@ footer p {
 
 @media (max-width: 480px) {
 	.wrapper {
-		background-image: url("rescources/index_mobile/background_graffiti.svg"), url("/rescources/index_mobile/background-paper-mobile.svg");
+		background-image: url("rescources/index_mobile/background_graffiti.svg"), url("rescources/index_mobile/background-paper-mobile.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
 
 	.logo {
@@ -225,7 +228,7 @@ footer p {
 		position: absolute;
 		width: 70px;
 		margin-top: -20px;
-		margin-right: 50px;
+		margin-right: -5px;
 		top: 0;
 		right: 0;
 		cursor: pointer;
@@ -253,6 +256,7 @@ footer p {
 		font-size: 15px;
 		color: black;
 		margin-bottom: 10px;
+		padding-left: 0px;
 		display: block;
 		font-family: "Franklin Gothic heavy", Arial, sans-serif;
 	}
@@ -276,7 +280,11 @@ footer p {
 		color: none;
 		width: 90px;
 		height: 5px;
+		color:black;
+		padding-left: 0px;
+		padding-bottom: 2px;
 		display: block;
+		background-color: white;
 		font-family: "Franklin Gothic heavy", Arial, sans-serif;
 	}
 
