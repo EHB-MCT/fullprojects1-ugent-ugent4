@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contacteer ons!</title>
-		<link rel="stylesheet" href="contactStyle.css" />
-		<script src="contact.js"></script>
 
-		<link rel="icon" type="image/x-icon" href="rescources/index_mobile/logo_ug.svg" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<nav class="header">
-				<div class="logo">
-					<a href="index.html"><img src="rescources/index_mobile/logo_ug.svg" /></a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contacteer ons!</title>
+	<link rel="stylesheet" href="contactStyle.css" />
+	<script src="contact.js"></script>
+
+	<link rel="icon" type="image/x-icon" href="rescources/index_mobile/logo_ug.svg" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+
+			<a href="index.html" class="logo-link">
+				<img src="rescources/participation/logo_UGent_NL_kleur.svg" alt="UGent logo">
+			</a>
+
+			<nav class="nav-menu">
+
+				<div class="nav-item home">
+					<a class="nav-button" href="index.html">Home</a>
 				</div>
 
-				<div class="menu-container">
-					<img src="rescources/index_mobile/hamburger_menu.svg" class="menu-icon" onclick="toggleMenu()" />
-					<div id="menu" class="menu-menu">
-						<a href="index.html" class="about">HOME</a>
-						<a href="about.html" class="about"> ABOUT </a>
-						<a href="contact.html" class="contact">CONTACT</a>
-						<a href="participation.html" class="deelnemen">DEELNEMEN</a>
-					</div>
+				<div class="nav-item about">
+					<a class="nav-button" href="about.html">About</a>
 				</div>
+
+				<div class="nav-item contact">
+					<a class="nav-button" href="contact.html">Contact</a>
+				</div>
+
+				<div class="nav-item participation">
+					<a class="nav-button-2" href="participation.html">Deelnemen</a>
+				</div>
+
 			</nav>
 
-			<div class="title">
-				<h1>VRAGEN OF OPMERKINGEN ?</h1>
+			<div class="hamburger">
+				<img src="rescources/participation/hamburger_menu.svg" alt="Hamburger-icon">
 			</div>
 
-			<div class="formulier">
-				<div class="anubis">
-					<img src="rescources/assets-contact-mobile-version/anubis_1.svg" />
+		</header>
+
+
+		<div class="title">
+			<h1>VRAGEN OF OPMERKINGEN ?</h1>
+		</div>
+
+		<div class="formulier">
+			<div class="anubis">
+				<img src="rescources/assets-contact-mobile-version/anubis_1.svg" />
+			</div>
+			<div class="input">
+				<div class="naam">
+					<label for="naam">Naam</label>
+					<input type="text" class="text-field t-input" maxlength="100" placeholder="Naam" required />
 				</div>
-				<div class="input">
-					<div class="naam">
-						<label for="naam">Naam</label>
-						<input type="text" class="text-field t-input" maxlength="100" placeholder="Naam" required />
-					</div>
 
-					<div class="voornaam">
-						<label for="naam">Voornaam</label>
-						<input type="text" class="text-field t-input" placeholder="Voornaam" required />
-					</div>
+				<div class="voornaam">
+					<label for="naam">Voornaam</label>
+					<input type="text" class="text-field t-input" placeholder="Voornaam" required />
+				</div>
 
-					<div class="vragen">
-						<label for="naam">Vragen/opmerkingen:</label>
-						<input type="text" class="text-field t-input text-input-long" placeholder="Stel hier jouw vragen/opmerkingen" required />
-					</div>
+				<div class="vragen">
+					<label for="naam">Vragen/opmerkingen:</label>
+					<input type="text" class="text-field t-input text-input-long"
+						placeholder="Stel hier jouw vragen/opmerkingen" required />
+				</div>
 
-					<div>
-						<label for="naam">E-mailadres</label>
-						<input type="email" class="text-field t-input" placeholder="bv. ditiseenemail@email.com" required />
-					</div>
+				<div>
+					<label for="naam">E-mailadres</label>
+					<input type="email" class="text-field t-input" placeholder="bv. ditiseenemail@email.com" required />
+				</div>
 
-					<div class="submit">
-						<input type="image" src="rescources/assets-contact-mobile-version/buttonverzenden.svg" id="submit-button" />
-					</div>
+				<div class="submit">
+					<input type="image" src="rescources/assets-contact-mobile-version/buttonverzenden.svg"
+						id="submit-button" />
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<footer>
-			<div class="icon-school">
-				<a href="#ugent" id="ug"><img src="rescources/index_mobile/logo_ug.svg" /></a>
-				<a href="#faculteitletterenenwijsbegeerte" id="flw"><img src="rescources/index_mobile/logo_flw.svg" /></a>
-			</div>
-			<p>geschiedenis.olympiade@ugent.be</p>
-			<div class="icons">
-				<a href="#instagram"><img src="rescources/index_mobile/icoon_insta.svg" /></a>
-				<a href="#facebook"><img src="rescources/index_mobile/icoon_fb.svg" /></a>
-				<a href="#linkedin"><img src="rescources/index_mobile/icoon_linked_in.svg" /></a>
-			</div>
-		</footer>
-	</body>
+	<footer>
+		<div class="icon-school">
+			<a href="#ugent" id="ug"><img src="rescources/index_mobile/logo_ug.svg" /></a>
+			<a href="#faculteitletterenenwijsbegeerte" id="flw"><img src="rescources/index_mobile/logo_flw.svg" /></a>
+		</div>
+		<p>geschiedenis.olympiade@ugent.be</p>
+		<div class="icons">
+			<a href="#instagram"><img src="rescources/index_mobile/icoon_insta.svg" /></a>
+			<a href="#facebook"><img src="rescources/index_mobile/icoon_fb.svg" /></a>
+			<a href="#linkedin"><img src="rescources/index_mobile/icoon_linked_in.svg" /></a>
+		</div>
+	</footer>
+</body>
+
 </html>

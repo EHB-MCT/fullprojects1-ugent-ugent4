@@ -16,14 +16,6 @@ const navLink2 = document.querySelectorAll('.nav-item .nav-button-2').forEach(li
 })
 
 
-function onlyOne(radio) {
-  var checkboxes = document.getElementsByName('check')
-  checkboxes.forEach((item) => {
-      if (item !== checkmark) item.checked = false
-  })
-}
-
-
 // Hide hamburger-menu on scroll
 //var prevScrollpos = window.pageYOffset;
 //window.onscroll = function() {

@@ -11,79 +11,165 @@ body {
 }
 
 /**header**/
-nav {
-	display: flex;
-	justify-content: space-between;
+header {
+	grid-column: 1/13;
+	grid-row: 1/2;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+
+	margin: 0px 20px;
+	padding-top: 20px;
+
+	position: relative;
+	z-index: 1;
+}
+
+.logo-link {
+	grid-column: 1 / 2;
+
+	align-self: center;
+	justify-self: start;
+
+	text-decoration: none;
+}
+
+.logo-link img {
+	height: 75px;
+}
+
+li {
+	list-style: none;
+}
+
+.nav-menu {
+	grid-row: 1;
+
+	top: 25px;
+	right: -350px;
+
+	display: grid;
+	grid-template-columns: repeat(7, 50px);
+	grid-template-rows: repeat(2, 35px);
+	grid-row-gap: 0px;
+
 	align-items: center;
-	margin-right: 50px;
+
+	position: fixed;
+	z-index: -1;
+
+	text-align: left;
+	transition: 0.3s;
+
+	background-color: rgba(219, 124, 170, .7);
+	border-radius: 20px 0px 0px 20px;
 }
 
-.logo {
-	width: 100px;
-	margin: 50px;
+.nav-menu.active {
+	top: 25px;
+	width: 70%;
+	right: 0px;
+
+	display: grid;
+	grid-template-columns: repeat(8, minmax(40px, auto));
+	grid-template-rows: repeat(2, 35px);
+	grid-row-gap: 0px;
+
+	align-self: center;
+	position: fixed;
+
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
-.menu-container img {
-	display: none;
+a {
+	color: #000;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 800;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+
 }
 
-.menu-menu a {
-	font-size: 18px;
+.nav-item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	position: relative;
+	z-index: 1;
+}
+
+.home {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.contact {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.about {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.participation {
+	grid-column: 4/5;
+	grid-row: 2;
+}
+
+.nav-button {
 	margin: 0px 10px;
 	padding: 4px 8px;
-	margin-right: 20px;
 
-	transition: 0.25s ease;
+	transition: all .15s ease;
+	cursor: pointer;
+
+	display: inline-block;
+}
+
+.nav-button:hover {
+	color: #fff;
+	background-color: #000;
+	transform: rotate(-8deg);
+}
+
+.nav-button-2 {
+	color: #FFD200;
+	background-color: #DB7CAA;
+	border-radius: 10px;
+	padding: 4px 8px;
+
+	margin: 0px 15px;
+
+	transition: .15s ease;
 	cursor: pointer;
 }
 
-.menu-menu a.about {
-	text-decoration: none;
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: black;
-}
-
-.menu-menu a.contact {
-	
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	text-decoration: none;
-	color: #fff;
+.nav-button-2:hover,
+.active {
+	color: #FFD200;
 	background-color: #000;
-	transform: rotate(-8deg);
 }
 
-.menu-menu a.deelnemen {
-	text-decoration: none;
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	color: #ffd200;
-	background-color: #db7caa;
-	border-radius: 10px;
-	padding: 4px 8px;
+.hamburger {
+	display: block;
+	cursor: pointer;
+
+	grid-column: 4/5;
+	align-self: center;
 }
 
-.menu-menu a.about:hover {
-	
-	color: #fff;
-	background-color: #000;
-	transform: rotate(-8deg);
-}
+.hamburger img {
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 50px;
 
-.menu-menu a.contact {
-	color: #fff;
-	background-color: #000;
-	transform: rotate(-8deg);
-}
-
-.deelnemen {
-	background-color: #ffd200;
-	padding: 25px;
-	border-radius: 25px;
-}
-
-.menu-menu a.deelnemen:hover {
-	background-color: black;
-	color: #ffd200;
-	transition-duration: 300ms;
+	background-color: #fff;
 }
 
 /***********************vragen*************/
@@ -107,6 +193,7 @@ nav {
 	justify-content: space-around;
 	margin-top: 50px;
 }
+
 /*anubis*/
 .anubis {
 	width: 300px;
@@ -152,9 +239,11 @@ label {
 	height: 130px;
 	border-radius: 25px;
 }
+
 .t-input::placeholder {
 	color: #1e64c8;
 }
+
 .t-input:focus {
 	outline: none !important;
 	border: 2px solid #db7caa;
@@ -280,7 +369,7 @@ footer p {
 		color: none;
 		width: 90px;
 		height: 5px;
-		color:black;
+		color: black;
 		padding-left: 0px;
 		padding-bottom: 2px;
 		display: block;

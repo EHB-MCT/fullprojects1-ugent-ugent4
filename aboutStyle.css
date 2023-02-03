@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
     overflow: auto;
@@ -25,6 +24,8 @@ header {
 
     position: relative;
     z-index: 1;
+
+    margin-top: -20px;
 }
 
 .logo-link {
@@ -150,8 +151,7 @@ a {
     cursor: pointer;
 }
 
-.nav-button-2:hover,
-.active {
+.nav-button-2:hover {
     color: #FFD200;
     background-color: #000;
 }
@@ -243,31 +243,31 @@ Published on May 2, 2020
 CSS
 Default avatar
 By Alligator.io
-Developer and author at DigitalOcean.*/ 
+Developer and author at DigitalOcean.*/
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     body {
         margin: 0px;
         overflow: auto;
-        background-image:url("rescources/assets-about/Dots_3.png"),url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"),url("rescources/assets-about/Graffiti_1-3.png"),url("rescources/assets-about/dots-bottom-left.svg"),url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size:45%, 150% , 42%, 90%, 200%, 100%;
-        background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
+        background-image: url("rescources/assets-about/Dots_3.png"), url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"), url("rescources/assets-about/Graffiti_1-3.png"), url("rescources/assets-about/dots-bottom-left.svg"), url("rescources/assets-contact-mobile-version/background\ paper.svg");
+        background-size: 45%, 150%, 42%, 90%, 200%, 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
         overflow-x: hidden;
-        background-position:90px 40px ,top right,bottom right, bottom right, bottom left, center;
+        background-position: 90px 40px, top right, bottom right, bottom right, bottom left, center;
         min-height: calc(100vh - 100px);
-        
+
 
 
     }
 
 
-   
-    
+
+
     main {
         margin: 20px;
-        
+
     }
-    
+
     .title {
         margin-top: 20px;
         margin-left: 25px;
@@ -282,17 +282,21 @@ Developer and author at DigitalOcean.*/
         width: 150px;
         height: 50px;
     }
-    
+
     /*button 1*/
-    input[type='checkbox'] { display:none; } 
-    
-    .wrap-collabsible { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle { 
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 30px;
         padding: 1rem;
@@ -301,13 +305,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle:hover { 
+    }
+
+    .lbl-toggle:hover {
         color: #FFF;
-     } 
-     
-     .lbl-toggle::before {
+    }
+
+    .lbl-toggle::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -318,27 +322,28 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle:checked+.lbl-toggle::before { 
+    }
+
+    .toggle:checked+.lbl-toggle::before {
         transform: rotate(90deg) translateX(-3px);
-     } 
-     
-     .collapsible-content { 
+    }
+
+    .collapsible-content {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-        
-     } 
-    
-    .toggle:checked + .lbl-toggle + .collapsible-content{ 
+
+    }
+
+    .toggle:checked+.lbl-toggle+.collapsible-content {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle:checked+.lbl-toggle {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
 
     .collapsible-content .content-inner {
         background: #e7eef8;
@@ -346,27 +351,31 @@ Developer and author at DigitalOcean.*/
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 23px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content p { 
-        margin-bottom: 0;
-       
     }
-    
+
+    .collapsible-content p {
+        margin-bottom: 0;
+
+    }
+
     /*button2*/
-    input[type='checkbox'] { display: none; } 
-    
-    .wrap-collabsible2 { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle2 { 
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible2 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle2 {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 30px;
         padding: 1rem;
@@ -375,13 +384,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle2:hover { 
+    }
+
+    .lbl-toggle2:hover {
         color: #FFF;
-     } 
-     
-     .lbl-toggle2::before {
+    }
+
+    .lbl-toggle2::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -392,26 +401,27 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle2:checked+.lbl-toggle2::before { 
+    }
+
+    .toggle2:checked+.lbl-toggle2::before {
         transform: rotate(90deg) translateX(-3px);
-     } 
-     
-     .collapsible-content2 { 
+    }
+
+    .collapsible-content2 {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle2:checked + .lbl-toggle2 + .collapsible-content2{ 
+    }
+
+    .toggle2:checked+.lbl-toggle2+.collapsible-content2 {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle2:checked+.lbl-toggle2 {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
 
     .collapsible-content2 .content-inner2 {
         background: #e7eef8;
@@ -419,27 +429,31 @@ Developer and author at DigitalOcean.*/
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 23px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content2 p { 
-        margin-bottom: 0; 
     }
-    
+
+    .collapsible-content2 p {
+        margin-bottom: 0;
+    }
+
     /*button3*/
-    
-    input[type='checkbox'] { display: none; } 
-    
-    .wrap-collabsible3 { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle3 { 
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible3 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle3 {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 30px;
         padding: 1rem;
@@ -448,13 +462,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle3:hover { 
-        color: #FFF;
-     }
+    }
 
-     .lbl-toggle3::before {
+    .lbl-toggle3:hover {
+        color: #FFF;
+    }
+
+    .lbl-toggle3::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -465,125 +479,131 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle3:checked+.lbl-toggle3::before { 
-        transform: rotate(90deg) translateX(-3px);
-     } 
+    }
 
-     .collapsible-content3 { 
+    .toggle3:checked+.lbl-toggle3::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    .collapsible-content3 {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle3:checked + .lbl-toggle3 + .collapsible-content3{ 
+    }
+
+    .toggle3:checked+.lbl-toggle3+.collapsible-content3 {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle3:checked+.lbl-toggle3 {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
-    
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
+
     .collapsible-content3 .content-inner3 {
         background: #e7eef8;
         border-bottom: 2px solid #d97ca8;
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 23px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content3 p { 
+    }
+
+    .collapsible-content3 p {
         margin-bottom: 0;
-     }
-    
-     /*button4*/
-    
-     input[type='checkbox'] { display: none; } 
-    
-     .wrap-collabsible4 { 
-         margin: 1.2rem 0; } 
-     
-     .lbl-toggle4 { 
-         display: block;
-         font-family: "Franklin Gothic Medium", arial,sans-serif;
-         font-size: 1.2rem; text-transform: uppercase;
-         text-align: left;
-         margin-top: 30px;
-         padding: 1rem;
-         color: #DDD;
-         background: #0069ff;
-         cursor: pointer;
-         border-radius: 50px;
-         transition: all 0.25s ease-out;
-         } 
-     
-     .lbl-toggle4:hover { 
-         color: #FFF;
-      } 
-      
-      .lbl-toggle4::before {
-         content: ' ';
-         display: inline-block;
-         border-top: 5px solid transparent;
-         border-bottom: 5px solid transparent;
-         border-left: 5px solid currentColor;
-         vertical-align: middle;
-         margin-right: .7rem;
-         margin-left: 5px;
-         transform: translateY(-2px);
-         transition: transform .2s ease-out;
-      } 
-     
-     .toggle4:checked+.lbl-toggle4::before { 
-         transform: rotate(90deg) translateX(-3px);
-      } 
-      
-      .collapsible-content4 { 
-         max-height: 0px;
-         overflow: hidden;
-         transition: max-height .25s ease-in-out;
-         margin-bottom: 150px;
+    }
 
-      } 
-     
-     .toggle4:checked + .lbl-toggle4 + .collapsible-content4{ 
-         max-height: 400px;
-      } 
-      
-     .toggle4:checked+.lbl-toggle4 {
-          border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-          background: #d97ca8;
-     } 
-     
-     .collapsible-content4 .content-inner4 {
-         background: #e7eef8;
-         border-bottom: 2px solid #d97ca8;
-         border-left: 2px solid #d97ca8;
-         border-right: 2px solid #d97ca8;
-         border-bottom-left-radius: 7px;
-         border-bottom-right-radius: 7px; 
-         padding: 1rem 1rem;
-         margin: 0 23px;
-         margin-top: -10px;
-         margin-bottom: 150px;
+    /*button4*/
 
-         } 
-         
-     .collapsible-content4 p { 
-         margin-bottom: 0; 
-     }
-    
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible4 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle4 {
+        display: block;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 30px;
+        padding: 1rem;
+        color: #DDD;
+        background: #0069ff;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.25s ease-out;
+    }
+
+    .lbl-toggle4:hover {
+        color: #FFF;
+    }
+
+    .lbl-toggle4::before {
+        content: ' ';
+        display: inline-block;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid currentColor;
+        vertical-align: middle;
+        margin-right: .7rem;
+        margin-left: 5px;
+        transform: translateY(-2px);
+        transition: transform .2s ease-out;
+    }
+
+    .toggle4:checked+.lbl-toggle4::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    .collapsible-content4 {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .25s ease-in-out;
+        margin-bottom: 150px;
+
+    }
+
+    .toggle4:checked+.lbl-toggle4+.collapsible-content4 {
+        max-height: 400px;
+    }
+
+    .toggle4:checked+.lbl-toggle4 {
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
+
+    .collapsible-content4 .content-inner4 {
+        background: #e7eef8;
+        border-bottom: 2px solid #d97ca8;
+        border-left: 2px solid #d97ca8;
+        border-right: 2px solid #d97ca8;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        padding: 1rem 1rem;
+        margin: 0 23px;
+        margin-top: -10px;
+        margin-bottom: 150px;
+
+    }
+
+    .collapsible-content4 p {
+        margin-bottom: 0;
+    }
+
     .menu-container {
         position: relative;
         z-index: 100;
     }
-    
+
     .menu-icon {
         position: absolute;
         width: 70px;
@@ -594,7 +614,7 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         z-index: 100;
     }
-    
+
     .menu {
         display: none;
         position: absolute;
@@ -610,7 +630,7 @@ Developer and author at DigitalOcean.*/
         visibility: hidden;
         z-index: 100;
     }
-    
+
     .menu a {
         text-decoration: none;
         font-size: 24pt;
@@ -618,11 +638,11 @@ Developer and author at DigitalOcean.*/
         margin-bottom: 10px;
         display: block;
     }
-    
+
     .menu a:hover {
         color: #0077ff;
     }
-    
+
     .menu-visible {
         display: block;
         visibility: visible;
@@ -633,29 +653,29 @@ Developer and author at DigitalOcean.*/
 
 }
 
-@media (min-width: 480px){
-   
+@media (min-width: 480px) {
+
     body {
         margin: 0px;
         overflow: auto;
-        background-image:url("rescources/assets-about/Dots_3.png"),url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"),url("rescources/assets-about/Graffiti_1-3.png"),url("rescources/assets-about/dots-bottom-left.svg"),url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size:210px, 700px , 200px, 410px, 1000px, 100%;
-        background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
+        background-image: url("rescources/assets-about/Dots_3.png"), url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"), url("rescources/assets-about/Graffiti_1-3.png"), url("rescources/assets-about/dots-bottom-left.svg"), url("rescources/assets-contact-mobile-version/background\ paper.svg");
+        background-size: 210px, 700px, 200px, 410px, 1000px, 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
         overflow-x: hidden;
-        background-position:90px 40px ,top right,bottom right, bottom right, bottom left, center;
+        background-position: 90px 40px, top right, bottom right, bottom right, bottom left, center;
         min-height: calc(100vh - 100px);
 
 
     }
 
-   
-    
-    
+
+
+
     main {
         margin: 20px;
-        
+
     }
-    
+
     .title {
         margin-top: 20px;
         margin-left: 25px;
@@ -670,17 +690,21 @@ Developer and author at DigitalOcean.*/
         width: 150px;
         height: 50px;
     }
-    
+
     /*button 1*/
-    input[type='checkbox'] { display:none; } 
-    
-    .wrap-collabsible { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle { 
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 30px;
         padding: 1rem;
@@ -689,13 +713,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle:hover { 
+    }
+
+    .lbl-toggle:hover {
         color: #FFF;
-     } 
-     
-     .lbl-toggle::before {
+    }
+
+    .lbl-toggle::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -706,26 +730,27 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle:checked+.lbl-toggle::before { 
+    }
+
+    .toggle:checked+.lbl-toggle::before {
         transform: rotate(90deg) translateX(-3px);
-     } 
-     
-     .collapsible-content { 
+    }
+
+    .collapsible-content {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle:checked + .lbl-toggle + .collapsible-content{ 
+    }
+
+    .toggle:checked+.lbl-toggle+.collapsible-content {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle:checked+.lbl-toggle {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
 
     .collapsible-content .content-inner {
         background: #e7eef8;
@@ -733,27 +758,31 @@ Developer and author at DigitalOcean.*/
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 23px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content p { 
-        margin-bottom: 0;
-       
     }
-    
+
+    .collapsible-content p {
+        margin-bottom: 0;
+
+    }
+
     /*button2*/
-    input[type='checkbox'] { display: none; } 
-    
-    .wrap-collabsible2 { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle2 { 
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible2 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle2 {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 30px;
         padding: 1rem;
@@ -762,13 +791,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle2:hover { 
+    }
+
+    .lbl-toggle2:hover {
         color: #FFF;
-     } 
-     
-     .lbl-toggle2::before {
+    }
+
+    .lbl-toggle2::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -779,26 +808,27 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle2:checked+.lbl-toggle2::before { 
+    }
+
+    .toggle2:checked+.lbl-toggle2::before {
         transform: rotate(90deg) translateX(-3px);
-     } 
-     
-     .collapsible-content2 { 
+    }
+
+    .collapsible-content2 {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle2:checked + .lbl-toggle2 + .collapsible-content2{ 
+    }
+
+    .toggle2:checked+.lbl-toggle2+.collapsible-content2 {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle2:checked+.lbl-toggle2 {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
 
     .collapsible-content2 .content-inner2 {
         background: #e7eef8;
@@ -806,27 +836,31 @@ Developer and author at DigitalOcean.*/
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 23px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content2 p { 
-        margin-bottom: 0; 
     }
-    
+
+    .collapsible-content2 p {
+        margin-bottom: 0;
+    }
+
     /*button3*/
-    
-    input[type='checkbox'] { display: none; } 
-    
-    .wrap-collabsible3 { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle3 { 
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible3 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle3 {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 30px;
         padding: 1rem;
@@ -835,13 +869,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle3:hover { 
-        color: #FFF;
-     }
+    }
 
-     .lbl-toggle3::before {
+    .lbl-toggle3:hover {
+        color: #FFF;
+    }
+
+    .lbl-toggle3::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -852,125 +886,131 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle3:checked+.lbl-toggle3::before { 
-        transform: rotate(90deg) translateX(-3px);
-     } 
+    }
 
-     .collapsible-content3 { 
+    .toggle3:checked+.lbl-toggle3::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    .collapsible-content3 {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle3:checked + .lbl-toggle3 + .collapsible-content3{ 
+    }
+
+    .toggle3:checked+.lbl-toggle3+.collapsible-content3 {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle3:checked+.lbl-toggle3 {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
-    
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
+
     .collapsible-content3 .content-inner3 {
         background: #e7eef8;
         border-bottom: 2px solid #d97ca8;
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 23px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content3 p { 
+    }
+
+    .collapsible-content3 p {
         margin-bottom: 0;
-     }
-    
-     /*button4*/
-    
-     input[type='checkbox'] { display: none; } 
-    
-     .wrap-collabsible4 { 
-         margin: 1.2rem 0; } 
-     
-     .lbl-toggle4 { 
-         display: block;
-         font-family: "Franklin Gothic Medium", arial,sans-serif;
-         font-size: 1.2rem; text-transform: uppercase;
-         text-align: left;
-         margin-top: 30px;
-         padding: 1rem;
-         color: #DDD;
-         background: #0069ff;
-         cursor: pointer;
-         border-radius: 50px;
-         transition: all 0.25s ease-out;
-         margin-bottom: 100px;
-         } 
-     
-     .lbl-toggle4:hover { 
-         color: #FFF;
-      } 
-      
-      .lbl-toggle4::before {
-         content: ' ';
-         display: inline-block;
-         border-top: 5px solid transparent;
-         border-bottom: 5px solid transparent;
-         border-left: 5px solid currentColor;
-         vertical-align: middle;
-         margin-right: .7rem;
-         margin-left: 5px;
-         transform: translateY(-2px);
-         transition: transform .2s ease-out;
-      } 
-     
-     .toggle4:checked+.lbl-toggle4::before { 
-         transform: rotate(90deg) translateX(-3px);
-      } 
-      
-      .collapsible-content4 { 
-         max-height: 0px;
-         overflow: hidden;
-         transition: max-height .25s ease-in-out;
-      } 
-     
-     .toggle4:checked + .lbl-toggle4 + .collapsible-content4{ 
-         max-height: 350px;
-      } 
-      
-     .toggle4:checked+.lbl-toggle4 {
-          border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-          background: #d97ca8;
-          margin-bottom: 0;
-     } 
-     
-     .collapsible-content4 .content-inner4 {
-         background: #e7eef8;
-         border-bottom: 2px solid #d97ca8;
-         border-left: 2px solid #d97ca8;
-         border-right: 2px solid #d97ca8;
-         border-bottom-left-radius: 7px;
-         border-bottom-right-radius: 7px; 
-         padding: 1rem 1rem;
-         margin: 0 23px;
-         margin-top: -10px;
-         margin-bottom: 100px;
-    
-         } 
-         
-     .collapsible-content4 p { 
-         margin-bottom: 0; 
-     }
-    
+    }
+
+    /*button4*/
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible4 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle4 {
+        display: block;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 30px;
+        padding: 1rem;
+        color: #DDD;
+        background: #0069ff;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.25s ease-out;
+        margin-bottom: 100px;
+    }
+
+    .lbl-toggle4:hover {
+        color: #FFF;
+    }
+
+    .lbl-toggle4::before {
+        content: ' ';
+        display: inline-block;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid currentColor;
+        vertical-align: middle;
+        margin-right: .7rem;
+        margin-left: 5px;
+        transform: translateY(-2px);
+        transition: transform .2s ease-out;
+    }
+
+    .toggle4:checked+.lbl-toggle4::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    .collapsible-content4 {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .25s ease-in-out;
+    }
+
+    .toggle4:checked+.lbl-toggle4+.collapsible-content4 {
+        max-height: 350px;
+    }
+
+    .toggle4:checked+.lbl-toggle4 {
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+        margin-bottom: 0;
+    }
+
+    .collapsible-content4 .content-inner4 {
+        background: #e7eef8;
+        border-bottom: 2px solid #d97ca8;
+        border-left: 2px solid #d97ca8;
+        border-right: 2px solid #d97ca8;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        padding: 1rem 1rem;
+        margin: 0 23px;
+        margin-top: -10px;
+        margin-bottom: 100px;
+
+    }
+
+    .collapsible-content4 p {
+        margin-bottom: 0;
+    }
+
     .menu-container {
         position: relative;
         z-index: 100;
     }
-    
+
     .menu-icon {
         position: absolute;
         width: 70px;
@@ -981,7 +1021,7 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         z-index: 100;
     }
-    
+
     .menu {
         display: none;
         position: absolute;
@@ -997,7 +1037,7 @@ Developer and author at DigitalOcean.*/
         visibility: hidden;
         z-index: 100;
     }
-    
+
     .menu a {
         text-decoration: none;
         font-size: 24pt;
@@ -1005,11 +1045,11 @@ Developer and author at DigitalOcean.*/
         margin-bottom: 10px;
         display: block;
     }
-    
+
     .menu a:hover {
         color: #0077ff;
     }
-    
+
     .menu-visible {
         display: block;
         visibility: visible;
@@ -1019,29 +1059,29 @@ Developer and author at DigitalOcean.*/
     }
 }
 
-@media (min-width:991px){
+@media (min-width:991px) {
 
     body {
         margin: 0px;
         overflow: auto;
-        background-image:url("rescources/assets-about/Dots_3.png"),url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"),url("rescources/assets-about/Graffiti_1-3.png"),url("rescources/assets-about/dots-bottom-left.svg"),url("rescources/assets-contact-mobile-version/background\ paper.svg");
-        background-size:250px, 1200px , 200px, 500px, 1050px, 100%;
-        background-repeat:no-repeat,no-repeat, no-repeat,no-repeat, no-repeat, repeat;
+        background-image: url("rescources/assets-about/Dots_3.png"), url("rescources/assets-about/dots-top-right.svg"), url("rescources/assets-about/chinese\ lion.png"), url("rescources/assets-about/Graffiti_1-3.png"), url("rescources/assets-about/dots-bottom-left.svg"), url("rescources/assets-contact-mobile-version/background\ paper.svg");
+        background-size: 250px, 1200px, 200px, 500px, 1050px, 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
         overflow-x: hidden;
-        background-position:180px 40px ,top right,bottom right, bottom right, bottom left, center;
+        background-position: 180px 40px, top right, bottom right, bottom right, bottom left, center;
         min-height: calc(100vh - 100px);
 
 
     }
 
-   
-    
-    
+
+
+
     main {
         margin: 60px;
-        
+
     }
-    
+
     .title {
         margin-top: 20px;
         margin-left: 15px;
@@ -1056,7 +1096,7 @@ Developer and author at DigitalOcean.*/
         width: 250px;
         height: 50px;
     }
-    
+
     /*Grid*/
     .collapsible-grid {
         display: grid;
@@ -1068,17 +1108,21 @@ Developer and author at DigitalOcean.*/
 
     /*button 1*/
 
-    input[type='checkbox'] { display:none; } 
-    
+    input[type='checkbox'] {
+        display: none;
+    }
+
     .wrap-collabsible {
         grid-column: 1/2;
         grid-row: 1/2;
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle { 
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 80px;
         padding: 1.4rem;
@@ -1087,13 +1131,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle:hover { 
+    }
+
+    .lbl-toggle:hover {
         color: #FFF;
-     } 
-     
-     .lbl-toggle::before {
+    }
+
+    .lbl-toggle::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -1104,26 +1148,27 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle:checked+.lbl-toggle::before { 
+    }
+
+    .toggle:checked+.lbl-toggle::before {
         transform: rotate(90deg) translateX(-3px);
-     } 
-     
-     .collapsible-content { 
+    }
+
+    .collapsible-content {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle:checked + .lbl-toggle + .collapsible-content{ 
+    }
+
+    .toggle:checked+.lbl-toggle+.collapsible-content {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle:checked+.lbl-toggle {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
 
     .collapsible-content .content-inner {
         background: #e7eef8;
@@ -1131,30 +1176,34 @@ Developer and author at DigitalOcean.*/
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 25px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content p { 
-        margin-bottom: 0;
-       
     }
-    
+
+    .collapsible-content p {
+        margin-bottom: 0;
+
+    }
+
     /*button2*/
-    input[type='checkbox'] { display: none; } 
-    
+    input[type='checkbox'] {
+        display: none;
+    }
+
     .wrap-collabsible2 {
         grid-column: 2/3;
         grid-row: 1/2;
 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle2 { 
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle2 {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 80px;
         padding: 1.4rem;
@@ -1163,13 +1212,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle2:hover { 
+    }
+
+    .lbl-toggle2:hover {
         color: #FFF;
-     } 
-     
-     .lbl-toggle2::before {
+    }
+
+    .lbl-toggle2::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -1180,26 +1229,27 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle2:checked+.lbl-toggle2::before { 
+    }
+
+    .toggle2:checked+.lbl-toggle2::before {
         transform: rotate(90deg) translateX(-3px);
-     } 
-     
-     .collapsible-content2 { 
+    }
+
+    .collapsible-content2 {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle2:checked + .lbl-toggle2 + .collapsible-content2{ 
+    }
+
+    .toggle2:checked+.lbl-toggle2+.collapsible-content2 {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle2:checked+.lbl-toggle2 {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
 
     .collapsible-content2 .content-inner2 {
         background: #e7eef8;
@@ -1207,27 +1257,31 @@ Developer and author at DigitalOcean.*/
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 25px;
         margin-top: -10px;
-        } 
-        
-    .collapsible-content2 p { 
-        margin-bottom: 0; 
     }
-    
+
+    .collapsible-content2 p {
+        margin-bottom: 0;
+    }
+
     /*button3*/
-    
-    input[type='checkbox'] { display: none; } 
-    
-    .wrap-collabsible3 { 
-        margin: 1.2rem 0; } 
-    
-    .lbl-toggle3 { 
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible3 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle3 {
         display: block;
-        font-family: "Franklin Gothic Medium", arial,sans-serif;
-        font-size: 1.2rem; text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         text-align: left;
         margin-top: 50px;
         padding: 1.4rem;
@@ -1236,13 +1290,13 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         border-radius: 50px;
         transition: all 0.25s ease-out;
-        } 
-    
-    .lbl-toggle3:hover { 
-        color: #FFF;
-     }
+    }
 
-     .lbl-toggle3::before {
+    .lbl-toggle3:hover {
+        color: #FFF;
+    }
+
+    .lbl-toggle3::before {
         content: ' ';
         display: inline-block;
         border-top: 5px solid transparent;
@@ -1253,125 +1307,131 @@ Developer and author at DigitalOcean.*/
         margin-left: 5px;
         transform: translateY(-2px);
         transition: transform .2s ease-out;
-     } 
-    
-    .toggle3:checked+.lbl-toggle3::before { 
-        transform: rotate(90deg) translateX(-3px);
-     } 
+    }
 
-     .collapsible-content3 { 
+    .toggle3:checked+.lbl-toggle3::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    .collapsible-content3 {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .25s ease-in-out;
-     } 
-    
-    .toggle3:checked + .lbl-toggle3 + .collapsible-content3{ 
+    }
+
+    .toggle3:checked+.lbl-toggle3+.collapsible-content3 {
         max-height: 350px;
-     } 
-     
+    }
+
     .toggle3:checked+.lbl-toggle3 {
-         border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-         background: #d97ca8;
-    } 
-    
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+    }
+
     .collapsible-content3 .content-inner3 {
         background: #e7eef8;
         border-bottom: 2px solid #d97ca8;
         border-left: 2px solid #d97ca8;
         border-right: 2px solid #d97ca8;
         border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px; 
+        border-bottom-right-radius: 7px;
         padding: 1rem 1rem;
         margin: 0 25px;
         margin-top: -10px;
         margin-bottom: 100px;
-        } 
-        
-    .collapsible-content3 p { 
+    }
+
+    .collapsible-content3 p {
         margin-bottom: 0;
-     }
-    
-     /*button4*/
-    
-     input[type='checkbox'] { display: none; } 
-    
-     .wrap-collabsible4 { 
-         margin: 1.2rem 0; } 
-     
-     .lbl-toggle4 { 
-         display: block;
-         font-family: "Franklin Gothic Medium", arial,sans-serif;
-         font-size: 1.2rem; text-transform: uppercase;
-         text-align: left;
-         margin-top: 50px;
-         padding: 1.4rem;
-         color: #DDD;
-         background: #0069ff;
-         cursor: pointer;
-         border-radius: 50px;
-         transition: all 0.25s ease-out;
-         } 
-     
-     .lbl-toggle4:hover { 
-         color: #FFF;
-      } 
-      
-      .lbl-toggle4::before {
-         content: ' ';
-         display: inline-block;
-         border-top: 5px solid transparent;
-         border-bottom: 5px solid transparent;
-         border-left: 5px solid currentColor;
-         vertical-align: middle;
-         margin-right: .7rem;
-         margin-left: 5px;
-         transform: translateY(-2px);
-         transition: transform .2s ease-out;
-      } 
-     
-     .toggle4:checked+.lbl-toggle4::before { 
-         transform: rotate(90deg) translateX(-3px);
-      } 
-      
-      .collapsible-content4 { 
-         max-height: 0px;
-         overflow: hidden;
-         transition: max-height .25s ease-in-out;
-      } 
-     
-     .toggle4:checked + .lbl-toggle4 + .collapsible-content4{ 
-         max-height: 350px;
-      } 
-      
-     .toggle4:checked+.lbl-toggle4 {
-          border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;
-          background: #d97ca8;
-          margin-bottom: 0;
-     } 
-     
-     .collapsible-content4 .content-inner4 {
-         background: #e7eef8;
-         border-bottom: 2px solid #d97ca8;
-         border-left: 2px solid #d97ca8;
-         border-right: 2px solid #d97ca8;
-         border-bottom-left-radius: 7px;
-         border-bottom-right-radius: 7px; 
-         padding: 1rem 1rem;
-         margin: 0 25px;
-         margin-top: -10px;
-         margin-bottom: 100px;
-    
-         } 
-         
-     .collapsible-content4 p { 
-         margin-bottom: 0; 
-     }
-    
+    }
+
+    /*button4*/
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .wrap-collabsible4 {
+        margin: 1.2rem 0;
+    }
+
+    .lbl-toggle4 {
+        display: block;
+        font-family: "Franklin Gothic Medium", arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-top: 50px;
+        padding: 1.4rem;
+        color: #DDD;
+        background: #0069ff;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.25s ease-out;
+    }
+
+    .lbl-toggle4:hover {
+        color: #FFF;
+    }
+
+    .lbl-toggle4::before {
+        content: ' ';
+        display: inline-block;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid currentColor;
+        vertical-align: middle;
+        margin-right: .7rem;
+        margin-left: 5px;
+        transform: translateY(-2px);
+        transition: transform .2s ease-out;
+    }
+
+    .toggle4:checked+.lbl-toggle4::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    .collapsible-content4 {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .25s ease-in-out;
+    }
+
+    .toggle4:checked+.lbl-toggle4+.collapsible-content4 {
+        max-height: 350px;
+    }
+
+    .toggle4:checked+.lbl-toggle4 {
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background: #d97ca8;
+        margin-bottom: 0;
+    }
+
+    .collapsible-content4 .content-inner4 {
+        background: #e7eef8;
+        border-bottom: 2px solid #d97ca8;
+        border-left: 2px solid #d97ca8;
+        border-right: 2px solid #d97ca8;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        padding: 1rem 1rem;
+        margin: 0 25px;
+        margin-top: -10px;
+        margin-bottom: 100px;
+
+    }
+
+    .collapsible-content4 p {
+        margin-bottom: 0;
+    }
+
     .menu-container {
         position: relative;
         z-index: 100;
     }
-    
+
     .menu-icon {
         position: absolute;
         width: 70px;
@@ -1382,7 +1442,7 @@ Developer and author at DigitalOcean.*/
         cursor: pointer;
         z-index: 100;
     }
-    
+
     .menu {
         display: none;
         position: absolute;
@@ -1398,7 +1458,7 @@ Developer and author at DigitalOcean.*/
         visibility: hidden;
         z-index: 100;
     }
-    
+
     .menu a {
         text-decoration: none;
         font-size: 24pt;
@@ -1406,11 +1466,11 @@ Developer and author at DigitalOcean.*/
         margin-bottom: 10px;
         display: block;
     }
-    
+
     .menu a:hover {
         color: #0077ff;
     }
-    
+
     .menu-visible {
         display: block;
         visibility: visible;
@@ -1431,7 +1491,7 @@ footer {
     align-items: center;
     margin-top: 300px;
     position: fixed;
-    bottom: 0;  
+    bottom: 0;
     width: 100%;
 }
 
@@ -1443,7 +1503,7 @@ footer {
 .icons {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .icons img {
@@ -1466,7 +1526,6 @@ footer p {
 @media (min-width: 580px) {
     footer p {
         display: flex
-        
     }
 
     #doe-mee {
