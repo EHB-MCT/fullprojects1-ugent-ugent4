@@ -62,7 +62,7 @@ li {
 	text-align: left;
 	transition: 0.3s;
 
-	background-color: rgba(219, 124, 170, .7);
+	background-color: rgba(219, 124, 170, 0.7);
 	border-radius: 20px 0px 0px 20px;
 }
 
@@ -90,7 +90,6 @@ a {
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-
 }
 
 .nav-item {
@@ -125,7 +124,7 @@ a {
 	margin: 0px 10px;
 	padding: 4px 8px;
 
-	transition: all .15s ease;
+	transition: all 0.15s ease;
 	cursor: pointer;
 
 	display: inline-block;
@@ -138,20 +137,20 @@ a {
 }
 
 .nav-button-2 {
-	color: #FFD200;
-	background-color: #DB7CAA;
+	color: #ffd200;
+	background-color: #db7caa;
 	border-radius: 10px;
 	padding: 4px 8px;
 
 	margin: 0px 15px;
 
-	transition: .15s ease;
+	transition: 0.15s ease;
 	cursor: pointer;
 }
 
 .nav-button-2:hover,
 .active {
-	color: #FFD200;
+	color: #ffd200;
 	background-color: #000;
 }
 
@@ -168,8 +167,6 @@ a {
 	padding: 0;
 	float: right;
 	width: 50px;
-
-	background-color: #fff;
 }
 
 /***********************vragen*************/
